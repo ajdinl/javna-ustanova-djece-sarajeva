@@ -9,14 +9,14 @@ import clsx from 'clsx';
 
 const links = [
   { href: '/', label: 'Početna' },
-  { href: '/o-nama', label: 'O nama' },
-  { href: '/vrtici', label: 'Vrtići' },
-  { href: '/upis', label: 'Upis' },
-  { href: '/jelovnici', label: 'Jelovnici' },
-  { href: '/obavjestenja', label: 'Obavještenja' },
-  { href: '/dokumenti', label: 'Dokumenti' },
-  { href: '/vijece-roditelja', label: 'Vijeće roditelja' },
-  { href: '/kontakt', label: 'Kontakt' },
+  { href: '/about', label: 'O nama' },
+  { href: '/kindergartens', label: 'Vrtići' },
+  { href: '/enrollment', label: 'Upis' },
+  { href: '/menus', label: 'Jelovnici' },
+  { href: '/news', label: 'Obavještenja' },
+  { href: '/documents', label: 'Dokumenti' },
+  { href: '/parent-council', label: 'Vijeće roditelja' },
+  { href: '/contact', label: 'Kontakt' },
 ];
 
 export default function Nav() {
@@ -102,7 +102,7 @@ export default function Nav() {
             </button>
           </div>
           <Link
-            href="/upis"
+            href="/enrollment"
             className="hidden md:inline-flex stamp-btn stamp-btn-clay text-sm !py-2 !px-4"
           >
             Prijavi dijete
@@ -146,7 +146,7 @@ export default function Nav() {
             })}
           </ul>
           <div className="mt-5 flex items-center gap-3">
-            <Link href="/upis" className="stamp-btn stamp-btn-clay flex-1 justify-center">
+            <Link href="/enrollment" className="stamp-btn stamp-btn-clay flex-1 justify-center">
               Prijavi dijete
             </Link>
             <button className="stamp-btn !px-4" aria-label="Pretraga">

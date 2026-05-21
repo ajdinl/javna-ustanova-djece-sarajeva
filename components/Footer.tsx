@@ -8,27 +8,27 @@ export default function Footer() {
     {
       title: 'Ustanova',
       links: [
-        ['O nama', '/o-nama'],
-        ['Vrtići', '/vrtici'],
-        ['Vijeće roditelja', '/vijece-roditelja'],
+        ['O nama', '/about'],
+        ['Vrtići', '/kindergartens'],
+        ['Vijeće roditelja', '/parent-council'],
         ['Karijera', '/karijera'],
       ],
     },
     {
       title: 'Roditelji',
       links: [
-        ['Upis djece', '/upis'],
-        ['Jelovnici', '/jelovnici'],
-        ['Obavještenja', '/obavjestenja'],
-        ['Često postavljana pitanja', '/upis#faq'],
+        ['Upis djece', '/enrollment'],
+        ['Jelovnici', '/menus'],
+        ['Obavještenja', '/news'],
+        ['Često postavljana pitanja', '/enrollment#faq'],
       ],
     },
     {
       title: 'Transparentnost',
       links: [
-        ['Dokumenti', '/dokumenti'],
-        ['Javne nabavke', '/dokumenti#nabavke'],
-        ['Izvještaji', '/dokumenti#izvjestaji'],
+        ['Dokumenti', '/documents'],
+        ['Javne nabavke', '/documents#nabavke'],
+        ['Izvještaji', '/documents#izvjestaji'],
         ['Politika privatnosti', '/privatnost'],
       ],
     },

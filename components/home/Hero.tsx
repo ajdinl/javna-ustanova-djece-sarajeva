@@ -72,14 +72,14 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.26 }}
               className="mt-9 flex flex-wrap gap-3"
             >
-              <Link href="/upis" className="stamp-btn stamp-btn-clay">
+              <Link href="/enrollment" className="stamp-btn stamp-btn-clay">
                 Upis djece
                 <HiArrowLongRight className="h-5 w-5" />
               </Link>
-              <Link href="/vrtici" className="stamp-btn stamp-btn-sage">
+              <Link href="/kindergartens" className="stamp-btn stamp-btn-sage">
                 Naši vrtići
               </Link>
-              <Link href="/jelovnici" className="stamp-btn">
+              <Link href="/menus" className="stamp-btn">
                 Jelovnici
               </Link>
             </motion.div>

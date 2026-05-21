@@ -194,7 +194,7 @@ export default function VrticiPage() {
                   ))}
                 </div>
                 <Link
-                  href="/kontakt"
+                  href="/contact"
                   className="mt-5 inline-flex items-center gap-2 text-sm font-medium border-b border-ink/30 hover:border-clay hover:text-clay transition pb-1"
                 >
                   Zakaži posjetu <HiArrowLongRight className="h-4 w-4" />
@@ -211,7 +211,7 @@ export default function VrticiPage() {
               I još 8 vrtića u izradi profila — uskoro dostupno.
             </span>
           </div>
-          <Link href="/kontakt" className="stamp-btn stamp-btn-clay self-start md:self-auto">
+          <Link href="/contact" className="stamp-btn stamp-btn-clay self-start md:self-auto">
             Pitaj nas o lokacijama
           </Link>
         </div>

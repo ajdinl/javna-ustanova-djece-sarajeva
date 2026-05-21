@@ -32,14 +32,14 @@ export default function CTABand() {
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
               <Link
-                href="/upis"
+                href="/enrollment"
                 className="inline-flex items-center gap-3 bg-paper text-clay px-6 py-3.5 rounded-full font-semibold hover:bg-sun hover:text-ink transition-colors"
               >
                 Prijavi dijete
                 <HiArrowLongRight className="h-5 w-5" />
               </Link>
               <Link
-                href="/kontakt"
+                href="/contact"
                 className="inline-flex items-center gap-2 text-paper/90 hover:text-sun px-2 py-3.5 font-medium border-b border-paper/40 hover:border-sun transition"
               >
                 Posjeti vrtić

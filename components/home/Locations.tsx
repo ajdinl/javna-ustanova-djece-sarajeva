@@ -37,7 +37,7 @@ export default function Locations() {
             Pronađite najbliži vrtić svojoj porodici.
           </p>
           <Link
-            href="/vrtici"
+            href="/kindergartens"
             className="mt-9 inline-flex items-center gap-3 bg-sun text-ink px-6 py-3.5 rounded-full font-semibold hover:bg-sun-deep transition-colors"
           >
             Otvori interaktivnu mapu
@@ -50,7 +50,7 @@ export default function Locations() {
             {vrtici.map((v, i) => (
               <li key={v.name}>
                 <Link
-                  href="/vrtici"
+                  href="/kindergartens"
                   className="group flex items-center gap-5 py-5 hover:bg-paper/5 -mx-3 px-3 rounded-2xl transition-colors"
                 >
                   <span className="font-mono text-xs text-paper/45 w-8 shrink-0">
@@ -77,7 +77,7 @@ export default function Locations() {
           <div className="mt-6 text-sm text-paper/55 flex items-center gap-3">
             <span>+ još 8 vrtića</span>
             <span className="h-px flex-1 bg-paper/15" />
-            <Link href="/vrtici" className="text-sun hover:underline">
+            <Link href="/kindergartens" className="text-sun hover:underline">
               Vidi sve
             </Link>
           </div>

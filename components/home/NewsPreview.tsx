@@ -9,7 +9,7 @@ const news = [
     date: '20.05.2026',
     title: 'Javni konkurs za prijem 18 odgajatelja u stalni radni odnos',
     body: 'Konkurs je objavljen u dnevnim novinama „Oslobođenje" i ostaje otvoren 14 dana.',
-    href: '/obavjestenja/konkurs-2026-05',
+    href: '/news/konkurs-2026-05',
     img: '/images/yard.jpg',
     accent: 'clay',
   },
@@ -18,7 +18,7 @@ const news = [
     date: '18.05.2026',
     title: 'Završna priredba pripremnog programa — Narodno pozorište',
     body: 'Mali umjetnici naših vrtića pripremili su program u trajanju od 45 minuta.',
-    href: '/obavjestenja/priredba',
+    href: '/news/priredba',
     img: '/images/puzzle.jpg',
     accent: 'sage',
   },
@@ -27,7 +27,7 @@ const news = [
     date: '12.05.2026',
     title: 'Odluka Upravnog odbora o usvajanju izvještaja za 2025. godinu',
     body: 'Kompletan izvještaj o radu i finansijama dostupan je u sekciji Dokumenti.',
-    href: '/obavjestenja/odluka-uo-2025',
+    href: '/news/odluka-uo-2025',
     img: '/images/seesaw.jpg',
     accent: 'sun',
   },
@@ -56,7 +56,7 @@ export default function NewsPreview() {
           </h2>
         </div>
         <Link
-          href="/obavjestenja"
+          href="/news"
           className="inline-flex items-center gap-2 self-start md:self-auto stamp-btn !py-2 !px-5 text-sm"
         >
           Sva obavještenja

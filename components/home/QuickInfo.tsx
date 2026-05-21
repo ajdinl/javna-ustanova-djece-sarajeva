@@ -34,14 +34,14 @@ export default function QuickInfo() {
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
-              href="/upis"
+              href="/enrollment"
               className="inline-flex items-center gap-2 bg-sun text-ink px-5 py-3 rounded-full font-semibold hover:bg-sun-deep transition-colors"
             >
               Detalji upisa
               <HiArrowLongRight className="h-4 w-4" />
             </Link>
             <Link
-              href="/obavjestenja"
+              href="/news"
               className="inline-flex items-center gap-2 text-paper/85 hover:text-sun px-2 py-3 font-medium border-b border-paper/30 hover:border-sun transition"
             >
               Sva obavještenja
