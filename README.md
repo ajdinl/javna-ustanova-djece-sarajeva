@@ -30,28 +30,32 @@ npm run start
 
 ```
 app/
-  layout.tsx           Root layout sa fontovima i nav/footer
-  page.tsx             Početna
-  o-nama/page.tsx
-  vrtici/page.tsx
-  upis/page.tsx
-  jelovnici/page.tsx
-  obavjestenja/page.tsx
-  dokumenti/page.tsx
-  vijece-roditelja/page.tsx
-  kontakt/page.tsx
-  globals.css          Paper grain, handline accent, polaroid styles
+  layout.tsx              Root layout sa fontovima i nav/footer
+  page.tsx                Početna  (/)
+  about/page.tsx          O nama
+  kindergartens/page.tsx  Vrtići
+  enrollment/page.tsx     Upis djece
+  menus/page.tsx          Jelovnici
+  news/page.tsx           Obavještenja
+  documents/page.tsx      Dokumenti
+  parent-council/page.tsx Vijeće roditelja
+  contact/page.tsx        Kontakt
+  globals.css             Paper grain, handline accent, polaroid styles
 components/
-  Nav.tsx              Sticky navigacija sa BHS/EN togglom
-  Footer.tsx           Sa newsletter prijavom
-  AnnouncementBar.tsx  Marquee traka na vrhu
-  Doodles.tsx          Ručno-crtane SVG dekoracije (pčele, oblačići…)
-  PageHeader.tsx       Konzistentan hero za podstranice
-  Accordion.tsx        FAQ
-  home/                Homepage sekcije
-public/images/         Logo + fotografije djece
-source_assets/         Originali (PNG, JPEG, HEIC)
+  Nav.tsx                 Sticky navigacija sa BHS/EN togglom
+  Footer.tsx              Sa newsletter prijavom
+  AnnouncementBar.tsx     Marquee traka na vrhu
+  Doodles.tsx             Ručno-crtane SVG dekoracije (pčele, oblačići…)
+  PageHeader.tsx          Konzistentan hero za podstranice
+  Accordion.tsx           FAQ
+  home/                   Homepage sekcije
+public/images/            Logo + fotografije djece
+source_assets/            Originali (PNG, JPEG, HEIC)
 ```
+
+URL putanje su na engleskom jer planiramo BHS/EN verziju kasnije
+(`next-intl` setup sa `app/[locale]/*` strukturom). Labeli i sav tekst
+trenutno su na bosanskom.
 
 ## Dizajn
 
