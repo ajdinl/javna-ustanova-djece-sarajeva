@@ -48,3 +48,4 @@ Thumbs.db
 
 # claude code local settings
 .claude/
+logs

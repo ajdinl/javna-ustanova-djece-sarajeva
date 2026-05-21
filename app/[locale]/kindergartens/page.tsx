@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { Link } from '@/i18n/navigation';
 import PageHeader from '@/components/PageHeader';
 import { Star, Squiggle, Sparkle } from '@/components/Doodles';
 import {
@@ -10,68 +11,15 @@ import {
   HiArrowLongRight,
 } from 'react-icons/hi2';
 
-const vrtici = [
-  {
-    name: 'Sunce',
-    area: 'Centar',
-    address: 'La Benevolencije 4',
-    capacity: 280,
-    phone: '+387 33 444 100',
-    programs: ['Inkluzivni program', 'Govorna terapija'],
-    img: '/images/yard.jpg',
-    accent: 'clay',
-  },
-  {
-    name: 'Bambi',
-    area: 'Novo Sarajevo',
-    address: 'Kolodvorska 12',
-    capacity: 210,
-    phone: '+387 33 444 110',
-    programs: ['Engleski jezik', 'Mala likovna škola'],
-    img: '/images/puzzle.jpg',
-    accent: 'sage',
-  },
-  {
-    name: 'Pčelica',
-    area: 'Stari Grad',
-    address: 'Bistrik 23',
-    capacity: 180,
-    phone: '+387 33 444 120',
-    programs: ['Mali sportaši', 'Tradicija i baština'],
-    img: '/images/bees.jpg',
-    accent: 'sun',
-  },
-  {
-    name: 'Maslačak',
-    area: 'Ilidža',
-    address: 'Mala Aleja 41',
-    capacity: 240,
-    phone: '+387 33 444 130',
-    programs: ['Muzička radionica', 'Eko-vrtić'],
-    img: '/images/motor.jpg',
-    accent: 'sky',
-  },
-  {
-    name: 'Dukat',
-    area: 'Vogošća',
-    address: 'Igmanska 7',
-    capacity: 160,
-    phone: '+387 33 444 140',
-    programs: ['Engleski jezik', 'Inkluzivni program'],
-    img: '/images/seesaw.jpg',
-    accent: 'clay',
-  },
-  {
-    name: 'Iskrica',
-    area: 'Novi Grad',
-    address: 'Trg djece Dobrinje 12',
-    capacity: 320,
-    phone: '+387 33 444 150',
-    programs: ['Najveći kapacitet', 'STEM kutak'],
-    img: '/images/yard.jpg',
-    accent: 'sage',
-  },
+const images = [
+  '/images/yard.jpg',
+  '/images/puzzle.jpg',
+  '/images/bees.jpg',
+  '/images/motor.jpg',
+  '/images/seesaw.jpg',
+  '/images/yard.jpg',
 ];
+const accents = ['clay', 'sage', 'sun', 'sky', 'clay', 'sage'] as const;
 
 const accentBg: Record<string, string> = {
   clay: 'bg-clay/8 text-clay',
@@ -80,34 +28,52 @@ const accentBg: Record<string, string> = {
   sky: 'bg-sky/10 text-sky-deep',
 };
 
-export default function VrticiPage() {
+type Item = {
+  name: string;
+  area: string;
+  address: string;
+  capacity: number;
+  phone: string;
+  programs: string[];
+};
+
+export default async function VrticiPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('kindergartens');
+  const items = t.raw('items') as Item[];
+
   return (
     <>
       <PageHeader
-        eyebrow="14 lokacija u Sarajevu"
+        eyebrow={t('header.eyebrow')}
         accent="sky"
         title={
           <>
-            Pronađi <em className="not-italic italic font-light text-sky-deep">najbliži</em>
+            {t('header.titleLine1')} <em className="not-italic italic font-light text-sky-deep">{t('header.titleAccent')}</em>
             <br />
-            vrtić svojoj porodici.
+            {t('header.titleLine2')}
           </>
         }
-        intro="Svaki naš vrtić ima svoju ličnost — dvorište, tim, omiljenu pjesmu. Pogledajte detalje, kontakte i specifične programe ispod."
+        intro={t('header.intro')}
       />
 
-      {/* Map placeholder */}
+      {/* Map */}
       <section className="mx-auto max-w-[1280px] px-5 lg:px-8 mb-16">
         <div className="relative h-[360px] md:h-[480px] rounded-[28px] overflow-hidden border border-ink/10 shadow-paper">
           <iframe
             src="https://www.openstreetmap.org/export/embed.html?bbox=18.30%2C43.83%2C18.50%2C43.89&amp;layer=mapnik"
             className="h-full w-full"
-            title="Mapa vrtića"
+            title={t('mapTitle')}
             loading="lazy"
           />
           <div className="absolute top-5 left-5 bg-paper rounded-full px-4 py-2 shadow-paper-sm border border-ink/10 font-mono text-[11px] uppercase tracking-[0.2em]">
             <Star className="inline-block h-3 w-3 mr-2" color="#C9533A" />
-            Interaktivna mapa
+            {t('mapBadge')}
           </div>
         </div>
       </section>
@@ -115,25 +81,22 @@ export default function VrticiPage() {
       {/* List */}
       <section className="mx-auto max-w-[1280px] px-5 lg:px-8 pb-24">
         <div className="flex items-center justify-between mb-10">
-          <h2 className="font-display text-3xl md:text-4xl tracking-tightest">
-            Šest istaknutih objekata
-          </h2>
+          <h2 className="font-display text-3xl md:text-4xl tracking-tightest">{t('listTitle')}</h2>
           <div className="hidden sm:flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.2em] text-ink/55">
             <Squiggle className="h-3 w-12 text-ink/35" />
-            sortirano po području
           </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {vrtici.map((v) => (
+          {items.map((v, i) => (
             <article
               key={v.name}
               className="group bg-paper rounded-[28px] border border-ink/8 overflow-hidden shadow-paper-sm hover:shadow-paper-lg hover:-translate-y-1 transition-all"
             >
               <div className="relative aspect-[16/10] overflow-hidden">
                 <Image
-                  src={v.img}
-                  alt={`Vrtić ${v.name}`}
+                  src={images[i]}
+                  alt={`${t('cardPrefix')} ${v.name}`}
                   fill
                   sizes="(min-width: 768px) 50vw, 100vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -145,14 +108,14 @@ export default function VrticiPage() {
                 </div>
                 <div className="absolute bottom-0 inset-x-0 p-5 bg-gradient-to-t from-ink/80 to-transparent">
                   <h3 className="font-display text-4xl md:text-5xl tracking-tightest text-paper">
-                    Vrtić „{v.name}"
+                    {t('cardPrefix')} „{v.name}"
                   </h3>
                 </div>
               </div>
               <div className="p-6 md:p-7 grid grid-cols-3 gap-4">
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/55">
-                    Adresa
+                    {t('labels.address')}
                   </div>
                   <div className="mt-1.5 text-sm flex items-start gap-1.5">
                     <HiOutlineMapPin className="h-4 w-4 text-clay shrink-0 mt-0.5" />
@@ -161,7 +124,7 @@ export default function VrticiPage() {
                 </div>
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/55">
-                    Kapacitet
+                    {t('labels.capacity')}
                   </div>
                   <div className="mt-1.5 text-sm flex items-center gap-1.5">
                     <HiOutlineUsers className="h-4 w-4 text-clay shrink-0" />
@@ -170,7 +133,7 @@ export default function VrticiPage() {
                 </div>
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/55">
-                    Kontakt
+                    {t('labels.contact')}
                   </div>
                   <a href={`tel:${v.phone.replace(/\s/g, '')}`} className="mt-1.5 text-sm flex items-center gap-1.5 hover:text-clay">
                     <HiOutlinePhone className="h-4 w-4 text-clay shrink-0" />
@@ -180,13 +143,13 @@ export default function VrticiPage() {
               </div>
               <div className="px-6 md:px-7 pb-6">
                 <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/55 mb-2">
-                  Programi
+                  {t('labels.programs')}
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {v.programs.map((p) => (
                     <span
                       key={p}
-                      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs ${accentBg[v.accent]}`}
+                      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs ${accentBg[accents[i]]}`}
                     >
                       <HiOutlineSparkles className="h-3 w-3" />
                       {p}
@@ -197,7 +160,7 @@ export default function VrticiPage() {
                   href="/contact"
                   className="mt-5 inline-flex items-center gap-2 text-sm font-medium border-b border-ink/30 hover:border-clay hover:text-clay transition pb-1"
                 >
-                  Zakaži posjetu <HiArrowLongRight className="h-4 w-4" />
+                  {t('labels.schedule')} <HiArrowLongRight className="h-4 w-4" />
                 </Link>
               </div>
             </article>
@@ -207,12 +170,10 @@ export default function VrticiPage() {
         <div className="mt-16 bg-paper-2 rounded-[28px] p-8 md:p-10 flex flex-col md:flex-row md:items-center justify-between gap-5">
           <div>
             <Sparkle className="inline h-4 w-4 text-clay mr-2" color="#C9533A" />
-            <span className="font-display text-2xl md:text-3xl tracking-tightest">
-              I još 8 vrtića u izradi profila — uskoro dostupno.
-            </span>
+            <span className="font-display text-2xl md:text-3xl tracking-tightest">{t('moreNote')}</span>
           </div>
           <Link href="/contact" className="stamp-btn stamp-btn-clay self-start md:self-auto">
-            Pitaj nas o lokacijama
+            {t('moreCta')}
           </Link>
         </div>
       </section>

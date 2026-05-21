@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { Link } from '@/i18n/navigation';
 import PageHeader from '@/components/PageHeader';
 import Accordion from '@/components/Accordion';
 import { Star, Squiggle, Sparkle, Sun } from '@/components/Doodles';
@@ -9,66 +10,34 @@ import {
   HiArrowLongRight,
 } from 'react-icons/hi2';
 
-const conditions = [
-  'Dijete uzrasta od 6 mjeseci do polaska u školu (do 6. godine).',
-  'Prebivalište jednog ili oba roditelja na području Kantona Sarajevo.',
-  'Dijete bez akutnih infekcija u trenutku početka pohađanja.',
-  'Saglasnost oba roditelja, ili staratelja, na uslove ustanove.',
-];
+export default async function UpisPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('enrollment');
 
-const docs = [
-  'Izvod iz matične knjige rođenih (original ili kopija ovjerena u Općini).',
-  'CIPS prijava prebivališta roditelja (ne starija od 6 mjeseci).',
-  'Potvrda o zaposlenju oba roditelja, ili odgovarajući zamjenski dokument.',
-  'Ljekarsko uvjerenje pedijatra (ne starije od 7 dana prije početka pohađanja).',
-  'Dokaz o specifičnim potrebama, ako postoje (medicinska, pedagoška).',
-];
+  const conditions = t.raw('conditions.items') as string[];
+  const docs = t.raw('docs.items') as string[];
+  const deadlines = t.raw('deadlines.items') as { d: string; l: string }[];
+  const faq = t.raw('faq.items') as { q: string; a: string }[];
 
-const deadlines = [
-  { d: '01. mart 2026.', l: 'Otvaranje prijave za pedagošku 2026/27.' },
-  { d: '15. juni 2026.', l: 'Krajnji rok za podnošenje aplikacija.' },
-  { d: '30. juni 2026.', l: 'Objavljivanje preliminarne rang-liste.' },
-  { d: '15. juli 2026.', l: 'Rok za žalbe i konačna rang-lista.' },
-  { d: '01. septembar 2026.', l: 'Početak pohađanja.' },
-];
-
-const faq = [
-  {
-    q: 'Mogu li prijaviti dijete elektronski?',
-    a: 'Da. Elektronska prijava je dostupna preko ovog sajta. Nakon online prijave, original dokumentaciju je potrebno donijeti u upravu ustanove u roku od 7 dana.',
-  },
-  {
-    q: 'Kako se boduju prijave kada ima više djece nego mjesta?',
-    a: 'Bodovni sistem propisan Pravilnikom uključuje radni status roditelja, broj djece u porodici, prebivalište, specifične potrebe djeteta i postojeću upisanu braću/sestre u ustanovi. Tabela je dostupna u sekciji Dokumenti.',
-  },
-  {
-    q: 'Plaća li se boravak djeteta u vrtiću?',
-    a: 'Da, postoji mjesečna participacija u skladu sa Odlukom Vlade Kantona Sarajevo. Iznos zavisi od prihoda porodice i broja djece u istom vrtiću; subvencije se mogu ostvariti.',
-  },
-  {
-    q: 'Šta ako dijete ima alergiju ili posebnu dijetu?',
-    a: 'Naše kuhinje pripremaju dijetalne obroke. Pri upisu se prilaže ljekarsko uvjerenje pedijatra sa preciznim instrukcijama, a osoblje vrtića individualno prati svaki slučaj.',
-  },
-  {
-    q: 'Da li dijete može pohađati pola dana?',
-    a: 'Da. Nudimo poludnevni boravak (4 sata) i cjelodnevni boravak (do 10,5 sati). Pri prijavi se opredjeljujete za jedan od režima.',
-  },
-];
-
-export default function UpisPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Upis 2026/27 otvoren"
+        eyebrow={t('header.eyebrow')}
         accent="clay"
         title={
           <>
-            Tri papira, jedna
+            {t('header.titleLine1')}
             <br />
-            <em className="not-italic italic font-light text-clay">odluka</em> za cijelu godinu.
+            <em className="not-italic italic font-light text-clay">{t('header.titleAccent')}</em>{' '}
+            {t('header.titleLine2')}
           </>
         }
-        intro="Pripremili smo postupak koji se završi za jedno popodne. Pročitajte uslove, prikupite dokumentaciju i prijavite dijete — ostalo je na nama."
+        intro={t('header.intro')}
       />
 
       {/* Big CTA */}
@@ -78,32 +47,32 @@ export default function UpisPage() {
           <div className="md:col-span-8 relative">
             <span className="eyebrow border-paper/40 text-paper">
               <Sparkle className="h-3 w-3" color="currentColor" />
-              Najbrži put
+              {t('bigCta.eyebrow')}
             </span>
             <h2 className="mt-4 font-display text-4xl md:text-5xl tracking-tightest leading-[1.02]">
-              Prijavi dijete elektronski — gotovo za 6 minuta.
+              {t('bigCta.title')}
             </h2>
           </div>
           <div className="md:col-span-4 relative">
             <Link
-              href="#prijava"
+              href="/enrollment#prijava"
               className="inline-flex items-center gap-3 bg-paper text-clay px-6 py-4 rounded-full font-semibold hover:bg-sun hover:text-ink transition-colors w-full justify-center text-base"
             >
-              PRIJAVI DIJETE
+              {t('bigCta.button')}
               <HiArrowLongRight className="h-5 w-5" />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Uslovi + Dokumentacija */}
+      {/* Conditions + Docs */}
       <section className="mx-auto max-w-[1280px] px-5 lg:px-8 grid lg:grid-cols-2 gap-8 mb-20">
         <article>
           <span className="eyebrow text-sage-deep">
-            <Star className="h-3 w-3" color="#5F7F4F" /> Uslovi upisa
+            <Star className="h-3 w-3" color="#5F7F4F" /> {t('conditions.eyebrow')}
           </span>
           <h2 className="mt-4 font-display text-4xl md:text-5xl tracking-tightest leading-[1.02]">
-            Kratko i jasno.
+            {t('conditions.title')}
           </h2>
           <ul className="mt-8 space-y-4">
             {conditions.map((c, i) => (
@@ -119,10 +88,10 @@ export default function UpisPage() {
 
         <article>
           <span className="eyebrow text-clay">
-            <Star className="h-3 w-3" color="#C9533A" /> Potrebna dokumentacija
+            <Star className="h-3 w-3" color="#C9533A" /> {t('docs.eyebrow')}
           </span>
           <h2 className="mt-4 font-display text-4xl md:text-5xl tracking-tightest leading-[1.02]">
-            Pet papira.
+            {t('docs.title')}
           </h2>
           <ol className="mt-8 space-y-4">
             {docs.map((d, i) => (
@@ -137,17 +106,17 @@ export default function UpisPage() {
         </article>
       </section>
 
-      {/* Rokovi */}
+      {/* Deadlines */}
       <section className="bg-paper-2 py-20 md:py-24">
         <div className="mx-auto max-w-[1280px] px-5 lg:px-8">
           <div className="flex items-center gap-3 text-ink/65 mb-8">
             <span className="eyebrow text-sun-deep">
-              <HiOutlineCalendarDays className="h-3.5 w-3.5" /> Rokovi
+              <HiOutlineCalendarDays className="h-3.5 w-3.5" /> {t('deadlines.eyebrow')}
             </span>
             <Squiggle className="h-3 w-12 text-ink/35" />
           </div>
           <h2 className="font-display font-black tracking-tightest text-5xl md:text-6xl leading-[0.95] max-w-2xl">
-            Šest mjeseci, pet datuma.
+            {t('deadlines.title')}
           </h2>
           <div className="mt-12 grid md:grid-cols-5 gap-3">
             {deadlines.map((d, i) => (
@@ -155,7 +124,9 @@ export default function UpisPage() {
                 key={d.d}
                 className="relative bg-paper rounded-[20px] p-5 border border-ink/8 shadow-paper-sm"
               >
-                <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-clay">Korak {i + 1}</div>
+                <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-clay">
+                  {t('deadlines.stepLabel', { n: i + 1 })}
+                </div>
                 <div className="mt-2 font-display text-lg tracking-tightest leading-tight">{d.d}</div>
                 <p className="mt-2 text-sm text-ink/65 leading-relaxed">{d.l}</p>
               </div>
@@ -164,80 +135,74 @@ export default function UpisPage() {
         </div>
       </section>
 
-      {/* Forma */}
+      {/* Form */}
       <section id="prijava" className="mx-auto max-w-[1280px] px-5 lg:px-8 py-20 md:py-28">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <span className="eyebrow text-clay">
-              <HiOutlineDocumentText className="h-3.5 w-3.5" /> Elektronska prijava
+              <HiOutlineDocumentText className="h-3.5 w-3.5" /> {t('form.eyebrow')}
             </span>
             <h2 className="mt-4 font-display font-black tracking-tightest text-5xl md:text-6xl leading-[0.95]">
-              Popuni formu.
+              {t('form.titleLine1')}
               <br />
-              <em className="not-italic italic font-light text-clay">Dišemo kratko</em> uz tebe.
+              <em className="not-italic italic font-light text-clay">{t('form.titleAccent')}</em>{' '}
+              {t('form.titleLine2')}
             </h2>
-            <p className="mt-6 text-ink/70 text-lg leading-relaxed">
-              Svi podaci ostaju isključivo unutar ustanove i obrađuju se u skladu sa Zakonom o zaštiti ličnih
-              podataka BiH. Potrebno je oko 6 minuta.
-            </p>
+            <p className="mt-6 text-ink/70 text-lg leading-relaxed">{t('form.intro')}</p>
             <div className="mt-8 bg-paper-2 rounded-[20px] p-5 text-sm text-ink/70 leading-relaxed border border-ink/8">
-              <strong className="block font-semibold text-ink mb-1">Trebate pomoć?</strong>
-              Pozovite +387 33 444 555 svakim radnim danom od 08:00 do 15:00. Pomažemo i bosanski, engleski i
-              znakovni jezik.
+              <strong className="block font-semibold text-ink mb-1">{t('form.helpTitle')}</strong>
+              {t('form.helpBody')}
             </div>
           </div>
 
           <form className="lg:col-span-7 bg-paper rounded-[28px] border border-ink/10 p-7 md:p-10 shadow-paper-sm space-y-6">
             <div className="grid sm:grid-cols-2 gap-5">
-              <Field id="ime" label="Ime djeteta" placeholder="npr. Adna" />
-              <Field id="prezime" label="Prezime djeteta" placeholder="npr. Hadžić" />
-              <Field id="rodjenje" label="Datum rođenja" type="date" />
-              <Field id="jmb" label="JMBG djeteta" placeholder="13 cifara" />
+              <Field id="ime" label={t('form.fields.firstName')} placeholder={t('form.fields.firstNamePh')} />
+              <Field id="prezime" label={t('form.fields.lastName')} placeholder={t('form.fields.lastNamePh')} />
+              <Field id="rodjenje" label={t('form.fields.birthDate')} type="date" />
+              <Field id="jmb" label={t('form.fields.jmbg')} placeholder={t('form.fields.jmbgPh')} />
             </div>
             <div className="grid sm:grid-cols-2 gap-5">
-              <Field id="roditelj" label="Ime i prezime roditelja" placeholder="Vaše ime" />
-              <Field id="telefon" label="Telefon" type="tel" placeholder="+387 6X XXX XXX" />
+              <Field id="roditelj" label={t('form.fields.parent')} placeholder={t('form.fields.parentPh')} />
+              <Field id="telefon" label={t('form.fields.phone')} type="tel" placeholder={t('form.fields.phonePh')} />
             </div>
-            <Field id="email" label="E-mail" type="email" placeholder="ime@email.ba" />
+            <Field id="email" label={t('form.fields.email')} type="email" placeholder={t('form.fields.emailPh')} />
 
             <div>
               <label className="block font-mono text-[11px] uppercase tracking-[0.18em] text-ink/65 mb-2">
-                Željeni vrtić
+                {t('form.fields.kindergarten')}
               </label>
               <select className="w-full bg-paper-2 border border-ink/10 rounded-2xl px-4 py-3.5 text-[15px] focus:outline-none focus:border-clay">
-                <option>Vrtić „Sunce" — Centar</option>
-                <option>Vrtić „Bambi" — Novo Sarajevo</option>
-                <option>Vrtić „Pčelica" — Stari Grad</option>
-                <option>Vrtić „Maslačak" — Ilidža</option>
-                <option>Vrtić „Dukat" — Vogošća</option>
-                <option>Vrtić „Iskrica" — Novi Grad</option>
+                <option>Sunce — Centar</option>
+                <option>Bambi — Novo Sarajevo</option>
+                <option>Pčelica — Stari Grad</option>
+                <option>Maslačak — Ilidža</option>
+                <option>Dukat — Vogošća</option>
+                <option>Iskrica — Novi Grad</option>
               </select>
             </div>
 
             <div>
               <label className="block font-mono text-[11px] uppercase tracking-[0.18em] text-ink/65 mb-2">
-                Posebne potrebe ili napomena
+                {t('form.fields.notes')}
               </label>
               <textarea
                 rows={4}
-                placeholder="Alergije, govorne specifičnosti, terapeutske preporuke…"
+                placeholder={t('form.fields.notesPh')}
                 className="w-full bg-paper-2 border border-ink/10 rounded-2xl px-4 py-3.5 text-[15px] focus:outline-none focus:border-clay resize-none"
               />
             </div>
 
             <label className="flex items-start gap-3 text-sm text-ink/70">
               <input type="checkbox" className="mt-1 h-5 w-5 accent-clay" />
-              <span>
-                Saglasan/saglasna sam sa obradom ličnih podataka i upoznat/a sa Politikom privatnosti JU „Djeca
-                Sarajeva".
-              </span>
+              <span>{t('form.consent')}</span>
             </label>
 
             <button
               type="submit"
               className="stamp-btn stamp-btn-clay w-full justify-center text-base !py-4"
             >
-              POŠALJI PRIJAVU
+              {t('form.submit')}
               <HiArrowLongRight className="h-5 w-5" />
             </button>
           </form>
@@ -249,14 +214,14 @@ export default function UpisPage() {
         <div className="mx-auto max-w-[1100px] px-5 lg:px-8">
           <div className="flex items-center gap-3 text-ink/65 mb-8">
             <span className="eyebrow text-sage-deep">
-              <Star className="h-3 w-3" color="#5F7F4F" /> Često pitano
+              <Star className="h-3 w-3" color="#5F7F4F" /> {t('faq.eyebrow')}
             </span>
             <Squiggle className="h-3 w-14 text-ink/35" />
           </div>
           <h2 className="font-display font-black tracking-tightest text-5xl md:text-6xl leading-[0.95] mb-10">
-            Pitanja koja roditelji
+            {t('faq.titleLine1')}
             <br />
-            <em className="not-italic italic font-light text-sage-deep">najčešće postave</em>.
+            <em className="not-italic italic font-light text-sage-deep">{t('faq.titleAccent')}</em>.
           </h2>
           <Accordion items={faq} />
         </div>

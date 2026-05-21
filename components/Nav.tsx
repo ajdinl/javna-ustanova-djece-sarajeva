@@ -1,29 +1,31 @@
 'use client';
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 import { HiBars3, HiXMark, HiMagnifyingGlass } from 'react-icons/hi2';
+import { Link, usePathname } from '@/i18n/navigation';
 import Logo from './Logo';
+import LocaleSwitcher from './LocaleSwitcher';
 import clsx from 'clsx';
 
 const links = [
-  { href: '/', label: 'Početna' },
-  { href: '/about', label: 'O nama' },
-  { href: '/kindergartens', label: 'Vrtići' },
-  { href: '/enrollment', label: 'Upis' },
-  { href: '/menus', label: 'Jelovnici' },
-  { href: '/news', label: 'Obavještenja' },
-  { href: '/documents', label: 'Dokumenti' },
-  { href: '/parent-council', label: 'Vijeće roditelja' },
-  { href: '/contact', label: 'Kontakt' },
-];
+  { href: '/', key: 'home' },
+  { href: '/about', key: 'about' },
+  { href: '/kindergartens', key: 'kindergartens' },
+  { href: '/enrollment', key: 'enrollment' },
+  { href: '/menus', key: 'menus' },
+  { href: '/news', key: 'news' },
+  { href: '/documents', key: 'documents' },
+  { href: '/parent-council', key: 'parentCouncil' },
+  { href: '/contact', key: 'contact' },
+] as const;
 
 export default function Nav() {
+  const t = useTranslations('nav');
+  const tA11y = useTranslations('a11y');
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [lang, setLang] = useState<'BHS' | 'ENG'>('BHS');
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 8);
@@ -48,7 +50,7 @@ export default function Nav() {
       <div className="mx-auto flex max-w-[1380px] items-center justify-between gap-6 px-5 py-3 lg:px-8">
         <Logo size={42} />
 
-        <nav aria-label="Glavna navigacija" className="hidden xl:block">
+        <nav aria-label={tA11y('mainNav')} className="hidden xl:block">
           <ul className="flex items-center gap-1">
             {links.map((l) => {
               const active = pathname === l.href || (l.href !== '/' && pathname.startsWith(l.href));
@@ -61,7 +63,7 @@ export default function Nav() {
                       active ? 'text-clay' : 'text-ink/75 hover:text-ink'
                     )}
                   >
-                    {l.label}
+                    {t(l.key)}
                     {active && (
                       <span
                         className="absolute -bottom-0.5 left-3 right-3 h-[6px]"
@@ -80,35 +82,20 @@ export default function Nav() {
 
         <div className="flex items-center gap-2">
           <button
-            aria-label="Pretraga"
+            aria-label={tA11y('search')}
             className="hidden sm:inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/15 hover:bg-ink/5 transition"
           >
             <HiMagnifyingGlass className="h-4 w-4" />
           </button>
-          <div className="hidden sm:flex items-center text-[11px] font-mono uppercase tracking-[0.18em] border border-ink/15 rounded-full overflow-hidden">
-            <button
-              onClick={() => setLang('BHS')}
-              className={clsx('px-2.5 py-1.5', lang === 'BHS' ? 'bg-ink text-paper' : 'text-ink/70')}
-              aria-pressed={lang === 'BHS'}
-            >
-              BHS
-            </button>
-            <button
-              onClick={() => setLang('ENG')}
-              className={clsx('px-2.5 py-1.5', lang === 'ENG' ? 'bg-ink text-paper' : 'text-ink/70')}
-              aria-pressed={lang === 'ENG'}
-            >
-              EN
-            </button>
-          </div>
+          <LocaleSwitcher />
           <Link
             href="/enrollment"
             className="hidden md:inline-flex stamp-btn stamp-btn-clay text-sm !py-2 !px-4"
           >
-            Prijavi dijete
+            {t('enrollChild')}
           </Link>
           <button
-            aria-label={open ? 'Zatvori meni' : 'Otvori meni'}
+            aria-label={open ? tA11y('closeMenu') : tA11y('openMenu')}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
             className="xl:hidden inline-flex h-11 w-11 items-center justify-center rounded-full border-2 border-ink"
@@ -125,7 +112,7 @@ export default function Nav() {
           open ? 'max-h-[640px] opacity-100' : 'max-h-0 opacity-0'
         )}
       >
-        <nav aria-label="Mobilna navigacija" className="px-5 py-4 bg-paper">
+        <nav aria-label={tA11y('mobileNav')} className="px-5 py-4 bg-paper">
           <ul className="flex flex-col">
             {links.map((l) => {
               const active = pathname === l.href || (l.href !== '/' && pathname.startsWith(l.href));
@@ -138,8 +125,8 @@ export default function Nav() {
                       active ? 'text-clay' : 'text-ink'
                     )}
                   >
-                    <span>{l.label}</span>
-                    {active && <span className="text-xs font-mono uppercase tracking-widest text-clay">trenutno</span>}
+                    <span>{t(l.key)}</span>
+                    {active && <span className="text-xs font-mono uppercase tracking-widest text-clay">{t('current')}</span>}
                   </Link>
                 </li>
               );
@@ -147,9 +134,9 @@ export default function Nav() {
           </ul>
           <div className="mt-5 flex items-center gap-3">
             <Link href="/enrollment" className="stamp-btn stamp-btn-clay flex-1 justify-center">
-              Prijavi dijete
+              {t('enrollChild')}
             </Link>
-            <button className="stamp-btn !px-4" aria-label="Pretraga">
+            <button className="stamp-btn !px-4" aria-label={tA11y('search')}>
               <HiMagnifyingGlass className="h-4 w-4" />
             </button>
           </div>

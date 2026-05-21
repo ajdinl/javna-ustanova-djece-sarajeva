@@ -1,0 +1,621 @@
+{
+  "meta": {
+    "title": "JU Djeca Sarajeva — Dom mašte, smijeha i učenja",
+    "description": "Javna ustanova za predškolski odgoj i obrazovanje. Sigurno i poticajno okruženje za rast i razvoj djece u Sarajevu."
+  },
+  "a11y": {
+    "skipToContent": "Preskoči na glavni sadržaj",
+    "openMenu": "Otvori meni",
+    "closeMenu": "Zatvori meni",
+    "search": "Pretraga",
+    "mainNav": "Glavna navigacija",
+    "mobileNav": "Mobilna navigacija"
+  },
+  "nav": {
+    "home": "Početna",
+    "about": "O nama",
+    "kindergartens": "Vrtići",
+    "enrollment": "Upis",
+    "menus": "Jelovnici",
+    "news": "Obavještenja",
+    "documents": "Dokumenti",
+    "parentCouncil": "Vijeće roditelja",
+    "contact": "Kontakt",
+    "enrollChild": "Prijavi dijete",
+    "current": "trenutno",
+    "institutionTag": "Javna ustanova · est. 1979",
+    "logoAriaLabel": "JU Djeca Sarajeva - Početna"
+  },
+  "announcement": {
+    "items": [
+      "Upis za pedagošku 2026/27 otvoren do 15. juna",
+      "Novi inkluzivni program u vrtiću Sunce",
+      "Radionica „Mali kuhar\" — 28. maj",
+      "Slobodna mjesta u vrtiću Bambi",
+      "Vijeće roditelja zasjeda 30. maja"
+    ]
+  },
+  "footer": {
+    "newsletterEyebrow": "Bilten ustanove",
+    "newsletterTitlePart1": "Mali",
+    "newsletterTitleAccent": "listovi",
+    "newsletterTitlePart2": "u vašem inboxu, jednom mjesečno.",
+    "newsletterIntro": "Sažetak događaja, novih jelovnika, fotografija iz radionica i konkursa — bez spama, bez praznih riječi.",
+    "newsletterEmailLabel": "E-mail adresa",
+    "newsletterPlaceholder": "vase.ime@email.ba",
+    "newsletterSubmit": "Prijavi se",
+    "newsletterConsent": "Prijavom prihvatate Politiku privatnosti. Odjava jednim klikom u bilo kom trenutku.",
+    "brandLineTop": "Javna ustanova",
+    "brandLineBottom": "„Djeca Sarajeva\"",
+    "brandIntro": "Predškolski odgoj i obrazovanje za djecu Kantona Sarajevo. Sigurno, toplo, pravedno.",
+    "col1Title": "Ustanova",
+    "col1Items": {
+      "about": "O nama",
+      "kindergartens": "Vrtići",
+      "parentCouncil": "Vijeće roditelja",
+      "career": "Karijera"
+    },
+    "col2Title": "Roditelji",
+    "col2Items": {
+      "enrollment": "Upis djece",
+      "menus": "Jelovnici",
+      "news": "Obavještenja",
+      "faq": "Često postavljana pitanja"
+    },
+    "col3Title": "Transparentnost",
+    "col3Items": {
+      "documents": "Dokumenti",
+      "procurement": "Javne nabavke",
+      "reports": "Izvještaji",
+      "privacy": "Politika privatnosti"
+    },
+    "hoursTitle": "Radno vrijeme",
+    "hoursWeekdays": "Pon–Pet",
+    "hoursWeekend": "Sub, Ned",
+    "hoursClosed": "Zatvoreno",
+    "hoursEmergency": "Hitan kontakt 24/7: 112",
+    "copyright": "© {year} JU „Djeca Sarajeva\". Sva prava zadržana.",
+    "madeWith": "Napravljeno s ljubavlju u Sarajevu"
+  },
+  "common": {
+    "readMore": "Pročitaj više",
+    "viewAll": "Vidi sve",
+    "downloadPdf": "Preuzmi PDF",
+    "submit": "Pošalji",
+    "filter": "Filter:",
+    "sortByDate": "sortirano po datumu",
+    "sortByArea": "sortirano po području"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Predškolski odgoj · Sarajevo",
+      "titleLine1": "Mjesto gdje",
+      "titleAccent": "mašta",
+      "titleLine2Rest": "uči",
+      "titleLine3": "hodati",
+      "titleUnderline": "prvi put",
+      "titleEnd": ".",
+      "intro": "Sigurno i poticajno okruženje za rast i razvoj djece u 14 sarajevskih vrtića. Više od četiri desetljeća odgajamo male građane uz pažnju, igru i poštovanje.",
+      "ctaEnroll": "Upis djece",
+      "ctaKindergartens": "Naši vrtići",
+      "ctaMenus": "Jelovnici",
+      "statKindergartens": "Vrtića u gradu",
+      "statChildren": "Naših mališana",
+      "statYears": "Godina rada",
+      "stickerText": "UPIS 2026/27 · OTVOREN · ZAGRLJAJ ČEKA ·",
+      "stickerBadge": "NEW",
+      "photo1Caption1": "Vrtić · Centar",
+      "photo1Caption2": "05/2026",
+      "photo2Caption": "Radionica „Mala pčelica\"",
+      "photo3Caption": "Učimo zajedno",
+      "altYard": "Djeca u dvorištu vrtića",
+      "altBees": "Djevojčica na kreativnoj radionici sa pčelama",
+      "altPuzzle": "Djeca rade puzzle za stolom"
+    },
+    "quickInfo": {
+      "announcementEyebrow": "Hitno obavještenje",
+      "announcementDate": "21/05/2026",
+      "announcementTitlePart1": "Upis djece za pedagošku 2026/27 — prijave do",
+      "announcementTitleAccent": "15. juna",
+      "announcementBody": "Aplikacije se podnose elektronski. Kompletna dokumentacija, rokovi i kriteriji su objavljeni na stranici upisa.",
+      "ctaDetails": "Detalji upisa",
+      "ctaAll": "Sva obavještenja",
+      "hoursEyebrow": "Radno vrijeme",
+      "hoursWeekdays": "Ponedjeljak — Petak",
+      "hoursWeekend": "Sub, Ned",
+      "hoursClosed": "Zatvoreno",
+      "hoursHolidays": "Praznici",
+      "contactEyebrow": "Direktan kontakt",
+      "contactAddress": "La Benevolencije 4\n71000 Sarajevo"
+    },
+    "values": {
+      "eyebrow": "Naše vrijednosti",
+      "titleLine1": "Četiri ideje koje",
+      "titleLine2": "nose",
+      "titleAccent": "naših 45 godina",
+      "intro": "Nismo samo čuvalište. Mi smo prvi javni prostor u kome dijete uči da je dobrodošlo onakvo kakvo jeste — i to definiše sve što radimo.",
+      "more": "Pročitaj više o nama",
+      "items": [
+        {
+          "title": "Sigurnost",
+          "body": "Svaki vrtić zadovoljava najviše standarde fizičke i emocionalne sigurnosti — od certificiranih prostorija do osposobljenog osoblja."
+        },
+        {
+          "title": "Razvoj",
+          "body": "Igra i kurikulum prilagođen uzrastu. Program prati djetetove jake strane umjesto da ih svrstava u kalupe."
+        },
+        {
+          "title": "Inkluzija",
+          "body": "Djeca različitih sposobnosti, jezika i porijekla rastu zajedno. Mreža defektologa, logopeda i pedagoga dostupna je svakoj porodici."
+        },
+        {
+          "title": "Učenje",
+          "body": "Sarađujemo sa fakultetima Univerziteta u Sarajevu. Naši pedagozi neprestano se obrazuju da bi djeca dobila najbolje."
+        }
+      ]
+    },
+    "day": {
+      "eyebrow": "Jedan dan u našem vrtiću",
+      "titleLine1Part1": "Ritam koji",
+      "titleLine1Accent": "smiruje",
+      "titleLine1End": "i",
+      "titleLine2Part1": "vrijeme koje",
+      "titleLine2Accent": "vrijedi",
+      "intro": "Predvidljiv ritam pomaže djetetu da se osjeća sigurnim. Naš plan dana ostavlja prostor za znatiželju, ali i za odmor — jer male glave trebaju oba.",
+      "altPhoto": "Djevojčica radi sa motoričkim igračkama",
+      "stickerLabel": "Aktivnost",
+      "stickerActivity": "Razvoj fine motorike",
+      "schedule": [
+        { "time": "06:30", "label": "Dolazak", "body": "Topli doček, šolja čaja za roditelje koji to žele." },
+        { "time": "08:00", "label": "Doručak", "body": "Sezonski meni iz vlastite kuhinje, prilagođen alergijama." },
+        { "time": "09:00", "label": "Radionica", "body": "Tematske aktivnosti — likovne, muzičke, govorne." },
+        { "time": "10:30", "label": "Vrijeme u dvorištu", "body": "Svjež zrak svaki dan, igralište, vrtni alat." },
+        { "time": "12:00", "label": "Ručak i odmor", "body": "Tih obrok, priča prije popodnevnog odmora." },
+        { "time": "15:00", "label": "Slobodna igra", "body": "Dijete bira aktivnost. Sloboda je dio razvoja." },
+        { "time": "17:00", "label": "Odlazak", "body": "Predaja roditeljima uz kratki dnevni rezime." }
+      ]
+    },
+    "news": {
+      "eyebrow": "Iz ustanove",
+      "title": "Najnovija",
+      "titleAccent": "obavještenja",
+      "allLink": "Sva obavještenja",
+      "items": [
+        {
+          "cat": "Konkurs",
+          "date": "20.05.2026",
+          "title": "Javni konkurs za prijem 18 odgajatelja u stalni radni odnos",
+          "body": "Konkurs je objavljen u dnevnim novinama „Oslobođenje\" i ostaje otvoren 14 dana."
+        },
+        {
+          "cat": "Događaj",
+          "date": "18.05.2026",
+          "title": "Završna priredba pripremnog programa — Narodno pozorište",
+          "body": "Mali umjetnici naših vrtića pripremili su program u trajanju od 45 minuta."
+        },
+        {
+          "cat": "Odluka",
+          "date": "12.05.2026",
+          "title": "Odluka Upravnog odbora o usvajanju izvještaja za 2025. godinu",
+          "body": "Kompletan izvještaj o radu i finansijama dostupan je u sekciji Dokumenti."
+        }
+      ]
+    },
+    "locations": {
+      "eyebrow": "Naših 14 adresa",
+      "titleLine1": "Vrtići širom",
+      "titleAccent": "Sarajeva",
+      "titleEnd": ".",
+      "intro": "Od Stupa do Bistrika, od Otoke do Vogošće — 14 objekata sa kapacitetom za više od 3.200 djece. Pronađite najbliži vrtić svojoj porodici.",
+      "cta": "Otvori interaktivnu mapu",
+      "moreCount": "+ još 8 vrtića",
+      "moreLink": "Vidi sve",
+      "capacityLabel": "{count} mjesta",
+      "items": [
+        { "name": "Vrtić „Sunce\"", "area": "Centar", "programs": "Inkluzivni program" },
+        { "name": "Vrtić „Bambi\"", "area": "Novo Sarajevo", "programs": "Engleski jezik" },
+        { "name": "Vrtić „Pčelica\"", "area": "Stari Grad", "programs": "Mali sportaši" },
+        { "name": "Vrtić „Maslačak\"", "area": "Ilidža", "programs": "Muzička radionica" },
+        { "name": "Vrtić „Dukat\"", "area": "Vogošća", "programs": "Engleski jezik" },
+        { "name": "Vrtić „Iskrica\"", "area": "Novi Grad", "programs": "Inkluzivni program" }
+      ]
+    },
+    "ctaBand": {
+      "eyebrow": "Upis 2026/27 otvoren",
+      "titleLine1": "Vaše dijete bi",
+      "titleLine2": "ovdje moglo",
+      "titleAccent": "naći prijatelja",
+      "titleEnd": ".",
+      "intro": "Prijavite se elektronski, donesite dokumentaciju, upoznajte naš tim. Cijeli postupak traje koliko i tri popodneva.",
+      "ctaPrimary": "Prijavi dijete",
+      "ctaSecondary": "Posjeti vrtić",
+      "altSeesaw": "Djeca na ljuljaški",
+      "altBees": "Kreativna radionica",
+      "photoCaption": "Svaki dan zaslužuje smijeh"
+    }
+  },
+  "about": {
+    "header": {
+      "eyebrow": "O ustanovi",
+      "titleLine1": "Četrdeset i šest godina",
+      "titleAccent": "istog cilja",
+      "intro": "Brinemo o najmlađim građanima Sarajeva otkako pamtimo. Mijenjamo metode, ali ne i osnovni princip — dijete je centar svega što radimo."
+    },
+    "mission": {
+      "eyebrow": "Misija",
+      "title": "Stvoriti najsigurnije, najpravednije i najradoznalije okruženje za djecu predškolskog uzrasta u Kantonu Sarajevo.",
+      "body": "Naša obaveza nije samo čuvanje djece — naša obaveza je da svako dijete ode iz naših vrtića spremno za osnovnu školu i, što je važnije, za svijet."
+    },
+    "vision": {
+      "eyebrow": "Vizija",
+      "title": "Biti mjesto gdje svako dijete pronađe svoj glas, prijatelja i prvi razlog da voli učenje.",
+      "body": "Vidimo Sarajevo u kome su predškolske godine najsretnije godine djetinjstva — i u kome svaki roditelj ima povjerenje u javnu ustanovu."
+    },
+    "history": {
+      "eyebrow": "Historija",
+      "title": "Od jedne adrese do",
+      "titleAccent": "četrnaest",
+      "items": [
+        { "y": "1979", "t": "Osnivanje", "b": "Skupština grada Sarajeva osniva jedinstvenu predškolsku ustanovu sa 8 vrtića." },
+        { "y": "1992–95", "t": "Rad pod opsadom", "b": "Tokom opsade rad ne prestaje — improvizovani prostori, hrana iz humanitarne pomoći." },
+        { "y": "2003", "t": "Reforma kurikuluma", "b": "Uvođenje integriranog programa razvoja djeteta po modelu „Reggio Emilia\"." },
+        { "y": "2014", "t": "Inkluzivni program", "b": "Pokretanje mreže defektologa i logopeda u svim objektima." },
+        { "y": "2026", "t": "14 vrtića · 3.200 djece", "b": "Danas brinemo o više od 3.200 djece u 14 objekata širom Sarajeva." }
+      ]
+    },
+    "org": {
+      "eyebrow": "Organizacija",
+      "titleLine1": "Tim koji",
+      "titleAccent": "odgovara",
+      "intro": "Naša ustanova zapošljava 412 osoba — od odgajatelja i defektologa, do kuhara i domara. Svaki ima ulogu u dnevnom ritmu vrtića.",
+      "members": [
+        { "name": "Lejla Hodžić", "role": "Direktorica", "period": "2021 — danas" },
+        { "name": "prof. dr. Adi Selman", "role": "Predsjednik Upravnog odbora", "period": "2024 — danas" },
+        { "name": "mr. Amra Šabanović", "role": "Pomoćnica za odgojno-obrazovni rad", "period": "2019 — danas" },
+        { "name": "Edin Hadžić", "role": "Pomoćnik za zajedničke poslove", "period": "2022 — danas" },
+        { "name": "Tarik Mušić", "role": "Predsjednik Vijeća roditelja", "period": "2025 — danas" }
+      ]
+    },
+    "galleryPrefix": "Foto"
+  },
+  "kindergartens": {
+    "header": {
+      "eyebrow": "14 lokacija u Sarajevu",
+      "titleAccent": "najbliži",
+      "titleLine1": "Pronađi",
+      "titleLine2": "vrtić svojoj porodici.",
+      "intro": "Svaki naš vrtić ima svoju ličnost — dvorište, tim, omiljenu pjesmu. Pogledajte detalje, kontakte i specifične programe ispod."
+    },
+    "mapBadge": "Interaktivna mapa",
+    "mapTitle": "Mapa vrtića",
+    "listTitle": "Šest istaknutih objekata",
+    "labels": {
+      "address": "Adresa",
+      "capacity": "Kapacitet",
+      "contact": "Kontakt",
+      "programs": "Programi",
+      "schedule": "Zakaži posjetu"
+    },
+    "items": [
+      { "name": "Sunce", "area": "Centar", "address": "La Benevolencije 4", "capacity": 280, "phone": "+387 33 444 100", "programs": ["Inkluzivni program", "Govorna terapija"] },
+      { "name": "Bambi", "area": "Novo Sarajevo", "address": "Kolodvorska 12", "capacity": 210, "phone": "+387 33 444 110", "programs": ["Engleski jezik", "Mala likovna škola"] },
+      { "name": "Pčelica", "area": "Stari Grad", "address": "Bistrik 23", "capacity": 180, "phone": "+387 33 444 120", "programs": ["Mali sportaši", "Tradicija i baština"] },
+      { "name": "Maslačak", "area": "Ilidža", "address": "Mala Aleja 41", "capacity": 240, "phone": "+387 33 444 130", "programs": ["Muzička radionica", "Eko-vrtić"] },
+      { "name": "Dukat", "area": "Vogošća", "address": "Igmanska 7", "capacity": 160, "phone": "+387 33 444 140", "programs": ["Engleski jezik", "Inkluzivni program"] },
+      { "name": "Iskrica", "area": "Novi Grad", "address": "Trg djece Dobrinje 12", "capacity": 320, "phone": "+387 33 444 150", "programs": ["Najveći kapacitet", "STEM kutak"] }
+    ],
+    "cardPrefix": "Vrtić",
+    "moreNote": "I još 8 vrtića u izradi profila — uskoro dostupno.",
+    "moreCta": "Pitaj nas o lokacijama"
+  },
+  "enrollment": {
+    "header": {
+      "eyebrow": "Upis 2026/27 otvoren",
+      "titleLine1": "Tri papira, jedna",
+      "titleAccent": "odluka",
+      "titleLine2": "za cijelu godinu.",
+      "intro": "Pripremili smo postupak koji se završi za jedno popodne. Pročitajte uslove, prikupite dokumentaciju i prijavite dijete — ostalo je na nama."
+    },
+    "bigCta": {
+      "eyebrow": "Najbrži put",
+      "title": "Prijavi dijete elektronski — gotovo za 6 minuta.",
+      "button": "PRIJAVI DIJETE"
+    },
+    "conditions": {
+      "eyebrow": "Uslovi upisa",
+      "title": "Kratko i jasno.",
+      "items": [
+        "Dijete uzrasta od 6 mjeseci do polaska u školu (do 6. godine).",
+        "Prebivalište jednog ili oba roditelja na području Kantona Sarajevo.",
+        "Dijete bez akutnih infekcija u trenutku početka pohađanja.",
+        "Saglasnost oba roditelja, ili staratelja, na uslove ustanove."
+      ]
+    },
+    "docs": {
+      "eyebrow": "Potrebna dokumentacija",
+      "title": "Pet papira.",
+      "items": [
+        "Izvod iz matične knjige rođenih (original ili kopija ovjerena u Općini).",
+        "CIPS prijava prebivališta roditelja (ne starija od 6 mjeseci).",
+        "Potvrda o zaposlenju oba roditelja, ili odgovarajući zamjenski dokument.",
+        "Ljekarsko uvjerenje pedijatra (ne starije od 7 dana prije početka pohađanja).",
+        "Dokaz o specifičnim potrebama, ako postoje (medicinska, pedagoška)."
+      ]
+    },
+    "deadlines": {
+      "eyebrow": "Rokovi",
+      "title": "Šest mjeseci, pet datuma.",
+      "stepLabel": "Korak {n}",
+      "items": [
+        { "d": "01. mart 2026.", "l": "Otvaranje prijave za pedagošku 2026/27." },
+        { "d": "15. juni 2026.", "l": "Krajnji rok za podnošenje aplikacija." },
+        { "d": "30. juni 2026.", "l": "Objavljivanje preliminarne rang-liste." },
+        { "d": "15. juli 2026.", "l": "Rok za žalbe i konačna rang-lista." },
+        { "d": "01. septembar 2026.", "l": "Početak pohađanja." }
+      ]
+    },
+    "form": {
+      "eyebrow": "Elektronska prijava",
+      "titleLine1": "Popuni formu.",
+      "titleAccent": "Dišemo kratko",
+      "titleLine2": "uz tebe.",
+      "intro": "Svi podaci ostaju isključivo unutar ustanove i obrađuju se u skladu sa Zakonom o zaštiti ličnih podataka BiH. Potrebno je oko 6 minuta.",
+      "helpTitle": "Trebate pomoć?",
+      "helpBody": "Pozovite +387 33 444 555 svakim radnim danom od 08:00 do 15:00. Pomažemo i bosanski, engleski i znakovni jezik.",
+      "fields": {
+        "firstName": "Ime djeteta",
+        "firstNamePh": "npr. Adna",
+        "lastName": "Prezime djeteta",
+        "lastNamePh": "npr. Hadžić",
+        "birthDate": "Datum rođenja",
+        "jmbg": "JMBG djeteta",
+        "jmbgPh": "13 cifara",
+        "parent": "Ime i prezime roditelja",
+        "parentPh": "Vaše ime",
+        "phone": "Telefon",
+        "phonePh": "+387 6X XXX XXX",
+        "email": "E-mail",
+        "emailPh": "ime@email.ba",
+        "kindergarten": "Željeni vrtić",
+        "notes": "Posebne potrebe ili napomena",
+        "notesPh": "Alergije, govorne specifičnosti, terapeutske preporuke…"
+      },
+      "consent": "Saglasan/saglasna sam sa obradom ličnih podataka i upoznat/a sa Politikom privatnosti JU „Djeca Sarajeva\".",
+      "submit": "POŠALJI PRIJAVU"
+    },
+    "faq": {
+      "eyebrow": "Često pitano",
+      "titleLine1": "Pitanja koja roditelji",
+      "titleAccent": "najčešće postave",
+      "items": [
+        {
+          "q": "Mogu li prijaviti dijete elektronski?",
+          "a": "Da. Elektronska prijava je dostupna preko ovog sajta. Nakon online prijave, original dokumentaciju je potrebno donijeti u upravu ustanove u roku od 7 dana."
+        },
+        {
+          "q": "Kako se boduju prijave kada ima više djece nego mjesta?",
+          "a": "Bodovni sistem propisan Pravilnikom uključuje radni status roditelja, broj djece u porodici, prebivalište, specifične potrebe djeteta i postojeću upisanu braću/sestre u ustanovi. Tabela je dostupna u sekciji Dokumenti."
+        },
+        {
+          "q": "Plaća li se boravak djeteta u vrtiću?",
+          "a": "Da, postoji mjesečna participacija u skladu sa Odlukom Vlade Kantona Sarajevo. Iznos zavisi od prihoda porodice i broja djece u istom vrtiću; subvencije se mogu ostvariti."
+        },
+        {
+          "q": "Šta ako dijete ima alergiju ili posebnu dijetu?",
+          "a": "Naše kuhinje pripremaju dijetalne obroke. Pri upisu se prilaže ljekarsko uvjerenje pedijatra sa preciznim instrukcijama, a osoblje vrtića individualno prati svaki slučaj."
+        },
+        {
+          "q": "Da li dijete može pohađati pola dana?",
+          "a": "Da. Nudimo poludnevni boravak (4 sata) i cjelodnevni boravak (do 10,5 sati). Pri prijavi se opredjeljujete za jedan od režima."
+        }
+      ]
+    }
+  },
+  "menus": {
+    "header": {
+      "eyebrow": "Šta jedu naši mališani",
+      "titleLine1": "Domaća kuhinja",
+      "titleAccent": "svaki dan",
+      "intro": "Naših šest kuhinja priprema oko 8.500 obroka sedmično, isključivo od svježih namirnica. Jelovnik kreira nutricionista u saradnji sa pedijatrima."
+    },
+    "weekTitle": "Sedmica 21",
+    "weekHeading": "Sedmični jelovnik · 19—23. maj",
+    "weekDownload": "Preuzmi PDF (sedmica 21)",
+    "dayLabel": "Dan {n}",
+    "labels": {
+      "breakfast": "Doručak",
+      "snack": "Užina",
+      "lunch": "Ručak",
+      "dessert": "Desert"
+    },
+    "week": [
+      { "day": "Ponedjeljak", "breakfast": "Mlijeko, hljeb od integralnog brašna, domaća marmelada od šljiva", "snack": "Sezonska voćka (jabuka, kruška)", "lunch": "Bosanski lonac, salata od kupusa", "dessert": "Domaći kolač od jabuka" },
+      { "day": "Utorak", "breakfast": "Kakao, integralna kifla sa sirom", "snack": "Šargarepa i krastavci u štapićima sa humusom", "lunch": "Pileći paprikaš sa kuhanim povrćem", "dessert": "Jogurt sa sušenim voćem" },
+      { "day": "Srijeda", "breakfast": "Mlijeko sa zobenim pahuljicama i medom", "snack": "Banana", "lunch": "Riba u tijestu, krompir-pire, salata od cikle", "dessert": "Voćna salata" },
+      { "day": "Četvrtak", "breakfast": "Topli sendvič sa kajganom i povrćem, čaj", "snack": "Pšenični mafin bez šećera", "lunch": "Mahune sa govedinom, kuhani krompir", "dessert": "Kompot od sušene šljive" },
+      { "day": "Petak", "breakfast": "Pita sa sirom i špinatom, jogurt", "snack": "Grožđe ili lubenica (sezonski)", "lunch": "Domaća sarma, integralni hljeb", "dessert": "Kuglica domaće halve" }
+    ],
+    "diets": {
+      "eyebrow": "Posebne dijete",
+      "title": "Alergije ne preskačemo.",
+      "intro": "Za svako dijete sa medicinskom indikacijom kuhinja vodi zaseban kuvarski karton i pripremni protokol. Roditelj dostavlja ljekarsko uvjerenje, mi radimo ostalo.",
+      "available": "dostupno",
+      "altPhoto": "Dijete u vrtiću",
+      "items": [
+        { "tag": "Bez glutena", "body": "Pripremamo zamjenske obroke; obavezna ljekarska potvrda." },
+        { "tag": "Bez laktoze", "body": "Biljna mlijeka i alternativni desert." },
+        { "tag": "Vegetarijanska", "body": "Po želji roditelja, garantirana raznolikost." },
+        { "tag": "Halal", "body": "Sva mesna i pekarska roba je halal-certificirana." },
+        { "tag": "Bez orašastih plodova", "body": "Striktan protokol u kuhinji; alergeni odvojeni." }
+      ]
+    },
+    "nutrition": {
+      "eyebrow": "Nutricija",
+      "title": "Svaki obrok je",
+      "titleAccent": "izvagan",
+      "items": [
+        { "n": "1.450 kcal", "l": "Prosječan dnevni unos" },
+        { "n": "5×", "l": "Obroka dnevno" },
+        { "n": "7+", "l": "Vrsta voća i povrća sedmično" },
+        { "n": "< 6g", "l": "Soli po obroku" }
+      ]
+    }
+  },
+  "news": {
+    "header": {
+      "eyebrow": "Iz ustanove",
+      "titleLine1": "Obavještenja, konkursi i",
+      "titleAccent": "vijesti",
+      "titleLine2": "iz vrtića.",
+      "intro": "Sve odluke Upravnog odbora, javni konkursi, najave događaja i kratke priče iz svakodnevice naših 14 objekata — na jednom mjestu."
+    },
+    "categories": ["Sve", "Konkurs", "Odluka", "Događaj", "Novost"],
+    "featuredSuffix": "Istaknuto",
+    "items": [
+      { "cat": "Konkurs", "date": "20.05.2026", "title": "Javni konkurs za prijem 18 odgajatelja u stalni radni odnos", "body": "Konkurs je objavljen u dnevnim novinama „Oslobođenje\" i ostaje otvoren 14 dana od dana objavljivanja." },
+      { "cat": "Događaj", "date": "18.05.2026", "title": "Završna priredba pripremnog programa — Narodno pozorište", "body": "Mali umjetnici naših vrtića pripremili su program u trajanju od 45 minuta. Ulaz besplatan, mjesta ograničena." },
+      { "cat": "Odluka", "date": "12.05.2026", "title": "Odluka Upravnog odbora o usvajanju izvještaja za 2025. godinu", "body": "Kompletan izvještaj o radu i finansijama dostupan je u sekciji Dokumenti." },
+      { "cat": "Novost", "date": "08.05.2026", "title": "Pokrenuta logopedska kabinet u vrtiću „Iskrica\"", "body": "Novi kabinet omogućava ranu detekciju i terapiju govornih poteškoća za djecu uzrasta 3—6 godina." },
+      { "cat": "Konkurs", "date": "02.05.2026", "title": "Javna nabavka opreme za dvorišta — poziv za dostavu ponuda", "body": "Tenderska dokumentacija dostupna je na portalu Agencije za javne nabavke BiH." },
+      { "cat": "Novost", "date": "28.04.2026", "title": "Saradnja sa Filozofskim fakultetom — praksa za studente pedagogije", "body": "Studenti će kroz dva semestra raditi u 6 odabranih vrtića sa mentorstvom iskusnih odgajatelja." },
+      { "cat": "Događaj", "date": "15.04.2026", "title": "Dan otvorenih vrata — 25. maj, svi naši vrtići", "body": "Roditelji i djeca mogu posjetiti vrtiće, upoznati timove i pogledati učionice. Bez najave." }
+    ]
+  },
+  "documents": {
+    "header": {
+      "eyebrow": "Transparentnost",
+      "titleLine1": "Sve odluke,",
+      "titleAccent": "na vidiku",
+      "intro": "Kao javna ustanova, sve odluke, izvještaje, statute i pravilnike objavljujemo otvoreno. Slobodno preuzimajte i čitajte."
+    },
+    "sectionLabel": "Sekcija {n}",
+    "docCount": "{count} dokumenata",
+    "publishedIn": "Objavljeno {year}.",
+    "download": "Preuzmi",
+    "sections": [
+      {
+        "id": "statut",
+        "label": "Statut i osnovni akti",
+        "docs": [
+          { "title": "Statut JU „Djeca Sarajeva\"", "year": 2024, "size": "2.1 MB", "format": "PDF" },
+          { "title": "Etički kodeks zaposlenih", "year": 2023, "size": "480 KB", "format": "PDF" },
+          { "title": "Politika privatnosti", "year": 2025, "size": "320 KB", "format": "PDF" }
+        ]
+      },
+      {
+        "id": "pravilnici",
+        "label": "Pravilnici",
+        "docs": [
+          { "title": "Pravilnik o upisu djece", "year": 2025, "size": "1.4 MB", "format": "PDF" },
+          { "title": "Pravilnik o radu", "year": 2024, "size": "1.8 MB", "format": "PDF" },
+          { "title": "Pravilnik o sistematizaciji radnih mjesta", "year": 2023, "size": "2.6 MB", "format": "PDF" },
+          { "title": "Pravilnik o nabavkama male vrijednosti", "year": 2024, "size": "740 KB", "format": "PDF" }
+        ]
+      },
+      {
+        "id": "nabavke",
+        "label": "Javne nabavke",
+        "docs": [
+          { "title": "Plan nabavki za 2026. godinu", "year": 2026, "size": "3.2 MB", "format": "PDF" },
+          { "title": "Izvještaj o izvršenju nabavki 2025.", "year": 2025, "size": "4.1 MB", "format": "PDF" },
+          { "title": "Otvoreni tenderi — opremanje dvorišta", "year": 2026, "size": "1.1 MB", "format": "PDF" },
+          { "title": "Tipski ugovor o uslugama", "year": 2024, "size": "210 KB", "format": "DOCX" }
+        ]
+      },
+      {
+        "id": "izvjestaji",
+        "label": "Izvještaji o radu",
+        "docs": [
+          { "title": "Godišnji izvještaj o radu 2025.", "year": 2025, "size": "6.4 MB", "format": "PDF" },
+          { "title": "Finansijski izvještaj 2025.", "year": 2025, "size": "2.9 MB", "format": "PDF" },
+          { "title": "Izvještaj o stručnom usavršavanju kadra", "year": 2024, "size": "1.5 MB", "format": "PDF" },
+          { "title": "Polugodišnji finansijski rezime 2026.", "year": 2026, "size": "1.2 MB", "format": "PDF" }
+        ]
+      }
+    ]
+  },
+  "parentCouncil": {
+    "header": {
+      "eyebrow": "Vijeće roditelja",
+      "titleLine1": "Glas porodica u",
+      "titleAccent": "našoj ustanovi",
+      "intro": "Vijeće čine roditelji iz svih 14 vrtića. Sastaje se mjesečno, donosi preporuke i prati naš rad iz pozicije onih kojima najviše stalo."
+    },
+    "membersTitle": "Šest predstavnika",
+    "mandate": "Mandat 2025—2027",
+    "presidentBadge": "★ Predsjednik",
+    "presidentQuote": "„Naš zadatak je jednostavan — biti most između porodica i ustanove. Slušamo, postavljamo pitanja i tražimo odgovore. Otvoreni smo za svaku poruku roditelja.\"",
+    "members": [
+      { "name": "Tarik Mušić", "role": "Predsjednik", "vrtic": "Vrtić „Sunce\"" },
+      { "name": "Alma Halilović", "role": "Zamjenica", "vrtic": "Vrtić „Iskrica\"" },
+      { "name": "Edin Begić", "role": "Tajnik", "vrtic": "Vrtić „Bambi\"" },
+      { "name": "Selma Mahić", "role": "Član", "vrtic": "Vrtić „Pčelica\"" },
+      { "name": "Dejan Pavlović", "role": "Član", "vrtic": "Vrtić „Maslačak\"" },
+      { "name": "Mirela Spahić", "role": "Član", "vrtic": "Vrtić „Dukat\"" }
+    ],
+    "duties": {
+      "eyebrow": "Nadležnosti",
+      "titleLine1": "Pet uloga jedne",
+      "titleAccent": "grupe",
+      "items": [
+        "Daje mišljenja na godišnji program rada ustanove i nadgleda njegovo provođenje.",
+        "Predlaže članove Upravnog odbora iz reda roditelja.",
+        "Razmatra žalbe roditelja i posreduje između ustanove i porodica.",
+        "Učestvuje u izradi internih akata koji direktno utiču na djecu i porodice.",
+        "Organizuje minimalno jedan godišnji susret sa svim roditeljima."
+      ]
+    },
+    "minutes": {
+      "title": "Zapisnici sa sjednica",
+      "archive": "Vidi arhivu (35+ zapisnika)",
+      "items": [
+        { "date": "12.05.2026", "title": "Redovna sjednica br. 14 — usvajanje programa za 2026/27", "size": "420 KB" },
+        { "date": "14.04.2026", "title": "Redovna sjednica br. 13 — analiza upitnika za roditelje", "size": "380 KB" },
+        { "date": "10.03.2026", "title": "Vanredna sjednica — sigurnost u dvorištima", "size": "290 KB" },
+        { "date": "12.02.2026", "title": "Redovna sjednica br. 12 — finansijski izvještaj IV kvartal 2025.", "size": "510 KB" },
+        { "date": "15.01.2026", "title": "Konstituirajuća sjednica novog saziva", "size": "230 KB" }
+      ]
+    },
+    "ctaCard": {
+      "eyebrow": "Otvoreni za roditelje",
+      "title1": "Imate prijedlog, žalbu ili pohvalu?",
+      "title2": "Pišite nam direktno."
+    }
+  },
+  "contact": {
+    "header": {
+      "eyebrow": "Kontaktirajte nas",
+      "titleLine1": "Tu smo svakog",
+      "titleAccent": "radnog dana",
+      "intro": "Birajte kanal koji vam odgovara — telefon, e-mail ili dolazak u kancelariju. Trudimo se da odgovorimo u istom radnom danu."
+    },
+    "cards": {
+      "address": { "label": "Adresa", "v": "La Benevolencije 4\n71000 Sarajevo" },
+      "phone": { "label": "Telefon", "v": "+387 33 444 555\n+387 33 444 556 (sekretarijat)" },
+      "email": { "label": "E-mail", "v": "info@djecasarajeva.ba\nuprava@djecasarajeva.ba" },
+      "hours": { "label": "Radno vrijeme", "v": "Pon — Pet: 07:30 — 15:30\nSub, Ned: zatvoreno" }
+    },
+    "form": {
+      "eyebrow": "Pišite nam",
+      "title": "Pošaljite poruku.",
+      "fields": {
+        "name": "Ime i prezime",
+        "namePh": "Vaše ime",
+        "email": "E-mail",
+        "emailPh": "ime@email.ba",
+        "topic": "Tema",
+        "message": "Poruka",
+        "messagePh": "Napišite nam..."
+      },
+      "topics": ["Opšti upit", "Upis djeteta", "Prijedlog za Vijeće roditelja", "Pohvala", "Žalba", "Medijski upit"],
+      "consent": "Saglasan/saglasna sam sa Politikom privatnosti.",
+      "submit": "POŠALJI PORUKU"
+    },
+    "quickCard": {
+      "eyebrow": "Brza linija",
+      "title": "Za roditelje već upisane djece",
+      "body": "Sva pitanja o trenutnom boravku, jelovniku ili odsustvu — pošaljite direktno odgajatelju ili u upravu vašeg vrtića."
+    },
+    "mapTitle": "Mapa uprave"
+  }
+}

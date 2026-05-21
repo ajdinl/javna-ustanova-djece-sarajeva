@@ -1,9 +1,11 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 
 export default function Logo({ size = 40, withText = true }: { size?: number; withText?: boolean }) {
+  const t = useTranslations('nav');
   return (
-    <Link href="/" aria-label="JU Djeca Sarajeva - Početna" className="flex items-center gap-3 group">
+    <Link href="/" aria-label={t('logoAriaLabel')} className="flex items-center gap-3 group">
       <span className="relative inline-block" style={{ width: size, height: size }}>
         <Image
           src="/images/logo.png"
@@ -20,7 +22,7 @@ export default function Logo({ size = 40, withText = true }: { size?: number; wi
             JU Djeca <span className="text-clay">Sarajeva</span>
           </span>
           <span className="block font-mono text-[10px] uppercase tracking-[0.18em] text-ink/55">
-            Javna ustanova · est. 1979
+            {t('institutionTag')}
           </span>
         </span>
       )}

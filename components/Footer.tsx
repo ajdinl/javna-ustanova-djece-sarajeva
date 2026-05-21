@@ -1,35 +1,38 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa6';
 import { HiArrowLongRight } from 'react-icons/hi2';
 import { Star, Squiggle } from './Doodles';
 
 export default function Footer() {
+  const t = useTranslations('footer');
+
   const cols = [
     {
-      title: 'Ustanova',
+      title: t('col1Title'),
       links: [
-        ['O nama', '/about'],
-        ['Vrtići', '/kindergartens'],
-        ['Vijeće roditelja', '/parent-council'],
-        ['Karijera', '/karijera'],
+        [t('col1Items.about'), '/about'],
+        [t('col1Items.kindergartens'), '/kindergartens'],
+        [t('col1Items.parentCouncil'), '/parent-council'],
+        [t('col1Items.career'), '/career'],
       ],
     },
     {
-      title: 'Roditelji',
+      title: t('col2Title'),
       links: [
-        ['Upis djece', '/enrollment'],
-        ['Jelovnici', '/menus'],
-        ['Obavještenja', '/news'],
-        ['Često postavljana pitanja', '/enrollment#faq'],
+        [t('col2Items.enrollment'), '/enrollment'],
+        [t('col2Items.menus'), '/menus'],
+        [t('col2Items.news'), '/news'],
+        [t('col2Items.faq'), '/enrollment#faq'],
       ],
     },
     {
-      title: 'Transparentnost',
+      title: t('col3Title'),
       links: [
-        ['Dokumenti', '/documents'],
-        ['Javne nabavke', '/documents#nabavke'],
-        ['Izvještaji', '/documents#izvjestaji'],
-        ['Politika privatnosti', '/privatnost'],
+        [t('col3Items.documents'), '/documents'],
+        [t('col3Items.procurement'), '/documents#nabavke'],
+        [t('col3Items.reports'), '/documents#izvjestaji'],
+        [t('col3Items.privacy'), '/privacy'],
       ],
     },
   ];
@@ -43,40 +46,36 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <span className="eyebrow text-sun/90 border-sun/40">
               <Star className="h-3 w-3" color="#E8A93B" />
-              Bilten ustanove
+              {t('newsletterEyebrow')}
             </span>
             <h3 className="mt-5 font-display text-4xl md:text-5xl leading-[0.95] tracking-tightest">
-              Mali <em className="not-italic text-sun">listovi</em> u vašem
-              <br /> inboxu, jednom mjesečno.
+              {t('newsletterTitlePart1')}{' '}
+              <em className="not-italic text-sun">{t('newsletterTitleAccent')}</em>{' '}
+              {t('newsletterTitlePart2')}
             </h3>
-            <p className="mt-4 text-paper/70 max-w-md">
-              Sažetak događaja, novih jelovnika, fotografija iz radionica i konkursa — bez spama, bez praznih
-              riječi.
-            </p>
+            <p className="mt-4 text-paper/70 max-w-md">{t('newsletterIntro')}</p>
           </div>
           <form className="lg:col-span-7 flex flex-col justify-end gap-3">
             <label htmlFor="nl-email" className="text-xs font-mono uppercase tracking-[0.2em] text-paper/60">
-              E-mail adresa
+              {t('newsletterEmailLabel')}
             </label>
             <div className="flex flex-col sm:flex-row gap-3">
               <input
                 id="nl-email"
                 type="email"
                 required
-                placeholder="vase.ime@email.ba"
+                placeholder={t('newsletterPlaceholder')}
                 className="flex-1 bg-transparent border-b-2 border-paper/30 focus:border-sun text-2xl md:text-3xl font-display py-3 outline-none placeholder:text-paper/30"
               />
               <button
                 type="submit"
                 className="self-start sm:self-auto inline-flex items-center gap-3 bg-sun text-ink px-6 py-4 rounded-full font-semibold hover:bg-sun-deep transition-colors"
               >
-                Prijavi se
+                {t('newsletterSubmit')}
                 <HiArrowLongRight className="h-5 w-5" />
               </button>
             </div>
-            <p className="text-xs text-paper/45">
-              Prijavom prihvatate Politiku privatnosti. Odjava jednim klikom u bilo kom trenutku.
-            </p>
+            <p className="text-xs text-paper/45">{t('newsletterConsent')}</p>
           </form>
         </div>
       </section>
@@ -85,13 +84,11 @@ export default function Footer() {
       <div className="mx-auto max-w-[1380px] grid lg:grid-cols-12 gap-12 px-5 lg:px-8 py-16">
         <div className="lg:col-span-4">
           <div className="font-display text-3xl tracking-tightest leading-tight">
-            Javna ustanova
+            {t('brandLineTop')}
             <br />
-            <span className="text-sun">„Djeca Sarajeva"</span>
+            <span className="text-sun">{t('brandLineBottom')}</span>
           </div>
-          <p className="mt-4 text-paper/70 text-sm leading-relaxed max-w-xs">
-            Predškolski odgoj i obrazovanje za djecu Kantona Sarajevo. Sigurno, toplo, pravedno.
-          </p>
+          <p className="mt-4 text-paper/70 text-sm leading-relaxed max-w-xs">{t('brandIntro')}</p>
           <div className="mt-6 space-y-1 text-sm text-paper/75">
             <p>La Benevolencije 4, 71000 Sarajevo</p>
             <p>+387 33 444 555</p>
@@ -138,20 +135,20 @@ export default function Footer() {
 
         <div className="lg:col-span-2">
           <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-paper/50 mb-4">
-            Radno vrijeme
+            {t('hoursTitle')}
           </div>
           <div className="text-sm text-paper/85 space-y-1">
             <p>
-              <strong className="font-semibold text-paper">Pon–Pet</strong>
+              <strong className="font-semibold text-paper">{t('hoursWeekdays')}</strong>
               <br />
               06:30 — 17:00
             </p>
             <p className="mt-3">
-              <strong className="font-semibold text-paper">Sub, Ned</strong>
+              <strong className="font-semibold text-paper">{t('hoursWeekend')}</strong>
               <br />
-              Zatvoreno
+              {t('hoursClosed')}
             </p>
-            <p className="mt-3 text-paper/55 text-xs">Hitan kontakt 24/7: 112</p>
+            <p className="mt-3 text-paper/55 text-xs">{t('hoursEmergency')}</p>
           </div>
         </div>
       </div>
@@ -160,11 +157,9 @@ export default function Footer() {
         <div className="mx-auto max-w-[1380px] flex flex-col md:flex-row md:items-center justify-between gap-4 px-5 lg:px-8 py-6 text-xs text-paper/55">
           <p className="flex items-center gap-2">
             <Squiggle className="h-3 w-12 text-paper/30" />
-            © {new Date().getFullYear()} JU „Djeca Sarajeva". Sva prava zadržana.
+            {t('copyright', { year: new Date().getFullYear() })}
           </p>
-          <p className="font-mono uppercase tracking-[0.18em]">
-            Napravljeno s ljubavlju u Sarajevu
-          </p>
+          <p className="font-mono uppercase tracking-[0.18em]">{t('madeWith')}</p>
         </div>
       </div>
     </footer>

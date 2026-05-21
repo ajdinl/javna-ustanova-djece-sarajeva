@@ -1,8 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { HiArrowLongRight } from 'react-icons/hi2';
 import { Bee, Cloud, Star, Sparkle, Squiggle } from '@/components/Doodles';
 
@@ -12,6 +13,7 @@ const fadeUp = {
 };
 
 export default function Hero() {
+  const t = useTranslations('home.hero');
   return (
     <section className="relative overflow-hidden pt-8 md:pt-12 pb-20 md:pb-28">
       {/* Decorative organic blobs */}
@@ -37,7 +39,7 @@ export default function Hero() {
             >
               <span className="eyebrow text-clay">
                 <Star className="h-3 w-3" color="#C9533A" />
-                Predškolski odgoj · Sarajevo
+                {t('eyebrow')}
               </span>
               <Squiggle className="h-3 w-14 text-ink/35" />
             </motion.div>
@@ -47,15 +49,15 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.08 }}
               className="mt-6 font-display font-black tracking-tightest text-[11.5vw] sm:text-[10vw] md:text-[8.5vw] lg:text-[6.6vw] xl:text-[96px] leading-[0.88]"
             >
-              Mjesto gdje
+              {t('titleLine1')}
               <br />
-              <span className="text-clay italic font-light">mašta</span> uči
+              <span className="text-clay italic font-light">{t('titleAccent')}</span> {t('titleLine2Rest')}
               <br />
-              hodati{' '}
+              {t('titleLine3')}{' '}
               <span className="relative inline-block">
-                <span className="handline handline-sun">prvi put</span>
+                <span className="handline handline-sun">{t('titleUnderline')}</span>
               </span>
-              .
+              {t('titleEnd')}
             </motion.h1>
 
             <motion.p
@@ -63,8 +65,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.18 }}
               className="mt-7 max-w-xl text-lg md:text-xl text-ink/75 leading-relaxed"
             >
-              Sigurno i poticajno okruženje za rast i razvoj djece u 14 sarajevskih vrtića. Više od četiri
-              desetljeća odgajamo male građane uz pažnju, igru i poštovanje.
+              {t('intro')}
             </motion.p>
 
             <motion.div
@@ -73,14 +74,14 @@ export default function Hero() {
               className="mt-9 flex flex-wrap gap-3"
             >
               <Link href="/enrollment" className="stamp-btn stamp-btn-clay">
-                Upis djece
+                {t('ctaEnroll')}
                 <HiArrowLongRight className="h-5 w-5" />
               </Link>
               <Link href="/kindergartens" className="stamp-btn stamp-btn-sage">
-                Naši vrtići
+                {t('ctaKindergartens')}
               </Link>
               <Link href="/menus" className="stamp-btn">
-                Jelovnici
+                {t('ctaMenus')}
               </Link>
             </motion.div>
 
@@ -90,9 +91,9 @@ export default function Hero() {
               className="mt-12 grid grid-cols-3 gap-4 max-w-md"
             >
               {[
-                { num: '14', label: 'Vrtića u gradu' },
-                { num: '3.200+', label: 'Naših mališana' },
-                { num: '45', label: 'Godina rada' },
+                { num: '14', label: t('statKindergartens') },
+                { num: '3.200+', label: t('statChildren') },
+                { num: '45', label: t('statYears') },
               ].map((s) => (
                 <div key={s.label}>
                   <div className="font-display text-3xl md:text-4xl font-black tracking-tightest text-ink">
@@ -116,15 +117,15 @@ export default function Hero() {
               <span className="tape -top-3 left-1/2 -translate-x-1/2 rotate-[-2deg]" />
               <Image
                 src="/images/yard.jpg"
-                alt="Djeca u dvorištu vrtića"
+                alt={t('altYard')}
                 width={800}
                 height={600}
                 className="w-full h-[300px] md:h-[340px] object-cover"
                 priority
               />
               <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-ink/55">
-                <span>Vrtić · Centar</span>
-                <span>05/2026</span>
+                <span>{t('photo1Caption1')}</span>
+                <span>{t('photo1Caption2')}</span>
               </div>
             </motion.div>
 
@@ -138,13 +139,13 @@ export default function Hero() {
               <span className="tape -top-3 right-6 rotate-[6deg]" style={{ background: 'rgba(95,127,79,0.55)' }} />
               <Image
                 src="/images/bees.jpg"
-                alt="Djevojčica na kreativnoj radionici sa pčelama"
+                alt={t('altBees')}
                 width={600}
                 height={800}
                 className="w-full h-[260px] object-cover"
               />
               <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-ink/55">
-                <span>Radionica „Mala pčelica"</span>
+                <span>{t('photo2Caption')}</span>
                 <Sparkle className="h-3 w-3" color="#E8A93B" />
               </div>
             </motion.div>
@@ -158,13 +159,13 @@ export default function Hero() {
             >
               <Image
                 src="/images/puzzle.jpg"
-                alt="Djeca rade puzzle za stolom"
+                alt={t('altPuzzle')}
                 width={600}
                 height={500}
                 className="w-full h-[150px] object-cover"
               />
               <div className="absolute bottom-2 left-3 right-3 font-mono text-[10px] uppercase tracking-widest text-ink/55 text-center">
-                Učimo zajedno
+                {t('photo3Caption')}
               </div>
             </motion.div>
 
@@ -181,12 +182,12 @@ export default function Hero() {
                     <path id="circle" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" />
                   </defs>
                   <text className="fill-ink font-mono text-[15px] uppercase tracking-[0.32em]">
-                    <textPath href="#circle">UPIS 2026/27 · OTVOREN · ZAGRLJAJ ČEKA ·</textPath>
+                    <textPath href="#circle">{t('stickerText')}</textPath>
                   </text>
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="bg-clay text-paper h-14 w-14 rounded-full flex items-center justify-center font-display font-black text-xl rotate-[-12deg] shadow-stamp-sm border-2 border-ink">
-                    NEW
+                    {t('stickerBadge')}
                   </div>
                 </div>
               </div>

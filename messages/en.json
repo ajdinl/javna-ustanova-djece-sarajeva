@@ -1,0 +1,621 @@
+{
+  "meta": {
+    "title": "JU Djeca Sarajeva — A Home for Imagination, Laughter, and Learning",
+    "description": "A public institution for preschool care and education. A safe and nurturing environment for the growth and development of children in Sarajevo."
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "search": "Search",
+    "mainNav": "Main navigation",
+    "mobileNav": "Mobile navigation"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "kindergartens": "Kindergartens",
+    "enrollment": "Enrollment",
+    "menus": "Menus",
+    "news": "News",
+    "documents": "Documents",
+    "parentCouncil": "Parent Council",
+    "contact": "Contact",
+    "enrollChild": "Enroll a child",
+    "current": "current",
+    "institutionTag": "Public institution · est. 1979",
+    "logoAriaLabel": "JU Djeca Sarajeva - Home"
+  },
+  "announcement": {
+    "items": [
+      "Enrollment for the 2026/27 school year is open until 15 June",
+      "New inclusive program at „Sunce\" kindergarten",
+      "„Little Chef\" workshop — 28 May",
+      "Spots available at „Bambi\" kindergarten",
+      "Parent Council meets on 30 May"
+    ]
+  },
+  "footer": {
+    "newsletterEyebrow": "Institution newsletter",
+    "newsletterTitlePart1": "Little",
+    "newsletterTitleAccent": "leaflets",
+    "newsletterTitlePart2": "in your inbox, once a month.",
+    "newsletterIntro": "A digest of events, new menus, photos from workshops, and open calls — no spam, no filler.",
+    "newsletterEmailLabel": "E-mail address",
+    "newsletterPlaceholder": "your.name@email.com",
+    "newsletterSubmit": "Subscribe",
+    "newsletterConsent": "By subscribing you accept our Privacy Policy. Unsubscribe with a single click any time.",
+    "brandLineTop": "Public institution",
+    "brandLineBottom": "„Djeca Sarajeva\"",
+    "brandIntro": "Preschool care and education for the children of Canton Sarajevo. Safe, warm, fair.",
+    "col1Title": "Institution",
+    "col1Items": {
+      "about": "About us",
+      "kindergartens": "Kindergartens",
+      "parentCouncil": "Parent Council",
+      "career": "Careers"
+    },
+    "col2Title": "Parents",
+    "col2Items": {
+      "enrollment": "Enrollment",
+      "menus": "Menus",
+      "news": "News",
+      "faq": "Frequently asked questions"
+    },
+    "col3Title": "Transparency",
+    "col3Items": {
+      "documents": "Documents",
+      "procurement": "Public procurement",
+      "reports": "Reports",
+      "privacy": "Privacy Policy"
+    },
+    "hoursTitle": "Hours",
+    "hoursWeekdays": "Mon–Fri",
+    "hoursWeekend": "Sat, Sun",
+    "hoursClosed": "Closed",
+    "hoursEmergency": "24/7 emergency contact: 112",
+    "copyright": "© {year} JU „Djeca Sarajeva\". All rights reserved.",
+    "madeWith": "Made with love in Sarajevo"
+  },
+  "common": {
+    "readMore": "Read more",
+    "viewAll": "View all",
+    "downloadPdf": "Download PDF",
+    "submit": "Submit",
+    "filter": "Filter:",
+    "sortByDate": "sorted by date",
+    "sortByArea": "sorted by area"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Preschool education · Sarajevo",
+      "titleLine1": "Where",
+      "titleAccent": "imagination",
+      "titleLine2Rest": "learns",
+      "titleLine3": "to take",
+      "titleUnderline": "its first steps",
+      "titleEnd": ".",
+      "intro": "A safe and nurturing environment for children to grow and thrive, across 14 kindergartens in Sarajevo. For more than four decades we've been raising young citizens with care, play, and respect.",
+      "ctaEnroll": "Enroll a child",
+      "ctaKindergartens": "Our kindergartens",
+      "ctaMenus": "Menus",
+      "statKindergartens": "Kindergartens in town",
+      "statChildren": "Of our little ones",
+      "statYears": "Years of work",
+      "stickerText": "ENROLLMENT 2026/27 · OPEN · A HUG AWAITS ·",
+      "stickerBadge": "NEW",
+      "photo1Caption1": "Kindergarten · Centar",
+      "photo1Caption2": "05/2026",
+      "photo2Caption": "„Little Bee\" workshop",
+      "photo3Caption": "We learn together",
+      "altYard": "Children in the kindergarten yard",
+      "altBees": "A girl in a creative workshop with bees",
+      "altPuzzle": "Children doing a puzzle at a table"
+    },
+    "quickInfo": {
+      "announcementEyebrow": "Urgent notice",
+      "announcementDate": "21/05/2026",
+      "announcementTitlePart1": "Enrollment for the 2026/27 year — applications until",
+      "announcementTitleAccent": "15 June",
+      "announcementBody": "Applications are submitted online. Full documentation, deadlines, and criteria are published on the enrollment page.",
+      "ctaDetails": "Enrollment details",
+      "ctaAll": "All announcements",
+      "hoursEyebrow": "Opening hours",
+      "hoursWeekdays": "Monday — Friday",
+      "hoursWeekend": "Sat, Sun",
+      "hoursClosed": "Closed",
+      "hoursHolidays": "Holidays",
+      "contactEyebrow": "Direct contact",
+      "contactAddress": "La Benevolencije 4\n71000 Sarajevo"
+    },
+    "values": {
+      "eyebrow": "Our values",
+      "titleLine1": "Four ideas that have",
+      "titleLine2": "carried us through",
+      "titleAccent": "our 45 years",
+      "intro": "We're not just a daycare. We're the first public space where a child learns that they are welcome exactly as they are — and that shapes everything we do.",
+      "more": "Read more about us",
+      "items": [
+        {
+          "title": "Safety",
+          "body": "Every kindergarten meets the highest standards of physical and emotional safety — from certified premises to trained staff."
+        },
+        {
+          "title": "Development",
+          "body": "Age-appropriate play and curriculum. The program follows each child's strengths instead of forcing them into a mold."
+        },
+        {
+          "title": "Inclusion",
+          "body": "Children of different abilities, languages, and backgrounds grow together. A network of special educators, speech therapists, and pedagogues is available to every family."
+        },
+        {
+          "title": "Learning",
+          "body": "We collaborate with faculties of the University of Sarajevo. Our educators continually train so children get the best."
+        }
+      ]
+    },
+    "day": {
+      "eyebrow": "A day in our kindergarten",
+      "titleLine1Part1": "A rhythm that",
+      "titleLine1Accent": "calms",
+      "titleLine1End": "and",
+      "titleLine2Part1": "time that",
+      "titleLine2Accent": "matters",
+      "intro": "A predictable rhythm helps a child feel safe. Our daily plan leaves room for curiosity, and for rest too — because little heads need both.",
+      "altPhoto": "A girl working with fine-motor toys",
+      "stickerLabel": "Activity",
+      "stickerActivity": "Fine motor development",
+      "schedule": [
+        { "time": "06:30", "label": "Arrival", "body": "A warm welcome, a cup of tea for parents who'd like one." },
+        { "time": "08:00", "label": "Breakfast", "body": "A seasonal menu from our own kitchen, adapted to allergies." },
+        { "time": "09:00", "label": "Workshop", "body": "Themed activities — art, music, language." },
+        { "time": "10:30", "label": "Yard time", "body": "Fresh air every day, playground, garden tools." },
+        { "time": "12:00", "label": "Lunch and rest", "body": "A quiet meal, a story before the afternoon nap." },
+        { "time": "15:00", "label": "Free play", "body": "The child chooses the activity. Freedom is part of growing." },
+        { "time": "17:00", "label": "Departure", "body": "Handover to parents with a short daily summary." }
+      ]
+    },
+    "news": {
+      "eyebrow": "From the institution",
+      "title": "Latest",
+      "titleAccent": "announcements",
+      "allLink": "All announcements",
+      "items": [
+        {
+          "cat": "Open call",
+          "date": "20.05.2026",
+          "title": "Public call for the permanent hiring of 18 educators",
+          "body": "The call was published in the daily „Oslobođenje\" and remains open for 14 days."
+        },
+        {
+          "cat": "Event",
+          "date": "18.05.2026",
+          "title": "Closing performance of the preparatory program — National Theatre",
+          "body": "The little artists from our kindergartens have prepared a 45-minute program."
+        },
+        {
+          "cat": "Decision",
+          "date": "12.05.2026",
+          "title": "Management Board decision on adopting the 2025 report",
+          "body": "The full report on operations and finances is available in the Documents section."
+        }
+      ]
+    },
+    "locations": {
+      "eyebrow": "Our 14 addresses",
+      "titleLine1": "Kindergartens across",
+      "titleAccent": "Sarajevo",
+      "titleEnd": ".",
+      "intro": "From Stup to Bistrik, from Otoka to Vogošća — 14 facilities with capacity for more than 3,200 children. Find the kindergarten nearest your family.",
+      "cta": "Open the interactive map",
+      "moreCount": "+ 8 more kindergartens",
+      "moreLink": "View all",
+      "capacityLabel": "{count} spots",
+      "items": [
+        { "name": "„Sunce\" Kindergarten", "area": "Centar", "programs": "Inclusive program" },
+        { "name": "„Bambi\" Kindergarten", "area": "Novo Sarajevo", "programs": "English language" },
+        { "name": "„Pčelica\" Kindergarten", "area": "Stari Grad", "programs": "Little athletes" },
+        { "name": "„Maslačak\" Kindergarten", "area": "Ilidža", "programs": "Music workshop" },
+        { "name": "„Dukat\" Kindergarten", "area": "Vogošća", "programs": "English language" },
+        { "name": "„Iskrica\" Kindergarten", "area": "Novi Grad", "programs": "Inclusive program" }
+      ]
+    },
+    "ctaBand": {
+      "eyebrow": "Enrollment 2026/27 open",
+      "titleLine1": "Your child could",
+      "titleLine2": "find a friend",
+      "titleAccent": "right here",
+      "titleEnd": ".",
+      "intro": "Apply online, bring the documents, meet our team. The whole process takes about as long as three afternoons.",
+      "ctaPrimary": "Enroll a child",
+      "ctaSecondary": "Visit a kindergarten",
+      "altSeesaw": "Children on a seesaw",
+      "altBees": "Creative workshop",
+      "photoCaption": "Every day deserves a laugh"
+    }
+  },
+  "about": {
+    "header": {
+      "eyebrow": "About the institution",
+      "titleLine1": "Forty-six years of",
+      "titleAccent": "the same goal",
+      "intro": "We've been caring for Sarajevo's youngest citizens for as long as we can remember. We change our methods, but never the core principle — the child is at the center of everything we do."
+    },
+    "mission": {
+      "eyebrow": "Mission",
+      "title": "To create the safest, fairest, and most curious environment for preschool children in Canton Sarajevo.",
+      "body": "Our duty is not just to look after children — our duty is to make sure every child leaves our kindergartens ready for primary school and, more importantly, for the world."
+    },
+    "vision": {
+      "eyebrow": "Vision",
+      "title": "To be a place where every child finds their voice, a friend, and a first reason to love learning.",
+      "body": "We see a Sarajevo where the preschool years are the happiest years of childhood — and where every parent trusts the public institution."
+    },
+    "history": {
+      "eyebrow": "History",
+      "title": "From one address to",
+      "titleAccent": "fourteen",
+      "items": [
+        { "y": "1979", "t": "Founding", "b": "The City Assembly of Sarajevo founds a unified preschool institution with 8 kindergartens." },
+        { "y": "1992–95", "t": "Working under siege", "b": "During the siege the work doesn't stop — improvised spaces, food from humanitarian aid." },
+        { "y": "2003", "t": "Curriculum reform", "b": "An integrated child-development program is introduced, modeled on „Reggio Emilia\"." },
+        { "y": "2014", "t": "Inclusive program", "b": "A network of special educators and speech therapists launches across all facilities." },
+        { "y": "2026", "t": "14 kindergartens · 3,200 children", "b": "Today we care for more than 3,200 children in 14 facilities across Sarajevo." }
+      ]
+    },
+    "org": {
+      "eyebrow": "Organization",
+      "titleLine1": "A team that",
+      "titleAccent": "answers",
+      "intro": "Our institution employs 412 people — from educators and special educators to cooks and caretakers. Each has a role in the daily rhythm of the kindergarten.",
+      "members": [
+        { "name": "Lejla Hodžić", "role": "Director", "period": "2021 — present" },
+        { "name": "prof. dr. Adi Selman", "role": "Chair of the Management Board", "period": "2024 — present" },
+        { "name": "Amra Šabanović, MA", "role": "Deputy for Educational Work", "period": "2019 — present" },
+        { "name": "Edin Hadžić", "role": "Deputy for Common Affairs", "period": "2022 — present" },
+        { "name": "Tarik Mušić", "role": "Chair of the Parent Council", "period": "2025 — present" }
+      ]
+    },
+    "galleryPrefix": "Photo"
+  },
+  "kindergartens": {
+    "header": {
+      "eyebrow": "14 locations in Sarajevo",
+      "titleAccent": "nearest",
+      "titleLine1": "Find the",
+      "titleLine2": "kindergarten for your family.",
+      "intro": "Every one of our kindergartens has its own personality — a yard, a team, a favorite song. See details, contacts, and specific programs below."
+    },
+    "mapBadge": "Interactive map",
+    "mapTitle": "Map of kindergartens",
+    "listTitle": "Six featured facilities",
+    "labels": {
+      "address": "Address",
+      "capacity": "Capacity",
+      "contact": "Contact",
+      "programs": "Programs",
+      "schedule": "Schedule a visit"
+    },
+    "items": [
+      { "name": "Sunce", "area": "Centar", "address": "La Benevolencije 4", "capacity": 280, "phone": "+387 33 444 100", "programs": ["Inclusive program", "Speech therapy"] },
+      { "name": "Bambi", "area": "Novo Sarajevo", "address": "Kolodvorska 12", "capacity": 210, "phone": "+387 33 444 110", "programs": ["English language", "Little art school"] },
+      { "name": "Pčelica", "area": "Stari Grad", "address": "Bistrik 23", "capacity": 180, "phone": "+387 33 444 120", "programs": ["Little athletes", "Tradition & heritage"] },
+      { "name": "Maslačak", "area": "Ilidža", "address": "Mala Aleja 41", "capacity": 240, "phone": "+387 33 444 130", "programs": ["Music workshop", "Eco-kindergarten"] },
+      { "name": "Dukat", "area": "Vogošća", "address": "Igmanska 7", "capacity": 160, "phone": "+387 33 444 140", "programs": ["English language", "Inclusive program"] },
+      { "name": "Iskrica", "area": "Novi Grad", "address": "Trg djece Dobrinje 12", "capacity": 320, "phone": "+387 33 444 150", "programs": ["Largest capacity", "STEM corner"] }
+    ],
+    "cardPrefix": "Kindergarten",
+    "moreNote": "And 8 more kindergartens with profiles in progress — available soon.",
+    "moreCta": "Ask us about locations"
+  },
+  "enrollment": {
+    "header": {
+      "eyebrow": "Enrollment 2026/27 open",
+      "titleLine1": "Three forms, one",
+      "titleAccent": "decision",
+      "titleLine2": "for the whole year.",
+      "intro": "We've made the process so it can be done in a single afternoon. Read the requirements, gather your documents, and apply — we handle the rest."
+    },
+    "bigCta": {
+      "eyebrow": "The fastest route",
+      "title": "Apply online — done in 6 minutes.",
+      "button": "ENROLL A CHILD"
+    },
+    "conditions": {
+      "eyebrow": "Enrollment conditions",
+      "title": "Short and clear.",
+      "items": [
+        "Child aged 6 months until entering primary school (up to age 6).",
+        "Residence of one or both parents within Canton Sarajevo.",
+        "Child with no acute infections at the start of attendance.",
+        "Consent of both parents, or guardians, to the institution's terms."
+      ]
+    },
+    "docs": {
+      "eyebrow": "Required documentation",
+      "title": "Five papers.",
+      "items": [
+        "Birth certificate (original or a copy certified at the Municipality).",
+        "CIPS residence registration of parents (not older than 6 months).",
+        "Proof of employment of both parents, or an equivalent substitute document.",
+        "Pediatrician's medical certificate (not older than 7 days before attendance starts).",
+        "Proof of specific needs, if any (medical, pedagogical)."
+      ]
+    },
+    "deadlines": {
+      "eyebrow": "Deadlines",
+      "title": "Six months, five dates.",
+      "stepLabel": "Step {n}",
+      "items": [
+        { "d": "1 March 2026", "l": "Opening of applications for the 2026/27 year." },
+        { "d": "15 June 2026", "l": "Final deadline for submitting applications." },
+        { "d": "30 June 2026", "l": "Publication of the preliminary ranking list." },
+        { "d": "15 July 2026", "l": "Deadline for appeals and final ranking list." },
+        { "d": "1 September 2026", "l": "Start of attendance." }
+      ]
+    },
+    "form": {
+      "eyebrow": "Online application",
+      "titleLine1": "Fill out the form.",
+      "titleAccent": "We're holding our breath",
+      "titleLine2": "with you.",
+      "intro": "All data stays strictly within the institution and is processed in line with BiH's Personal Data Protection Act. Takes about 6 minutes.",
+      "helpTitle": "Need help?",
+      "helpBody": "Call +387 33 444 555 on any workday from 08:00 to 15:00. We assist in Bosnian, English, and sign language.",
+      "fields": {
+        "firstName": "Child's first name",
+        "firstNamePh": "e.g. Adna",
+        "lastName": "Child's last name",
+        "lastNamePh": "e.g. Hadžić",
+        "birthDate": "Date of birth",
+        "jmbg": "Child's JMBG",
+        "jmbgPh": "13 digits",
+        "parent": "Parent's full name",
+        "parentPh": "Your name",
+        "phone": "Phone",
+        "phonePh": "+387 6X XXX XXX",
+        "email": "E-mail",
+        "emailPh": "name@email.com",
+        "kindergarten": "Preferred kindergarten",
+        "notes": "Special needs or notes",
+        "notesPh": "Allergies, speech specifics, therapy recommendations…"
+      },
+      "consent": "I consent to the processing of personal data and have read the Privacy Policy of JU „Djeca Sarajeva\".",
+      "submit": "SUBMIT APPLICATION"
+    },
+    "faq": {
+      "eyebrow": "Frequently asked",
+      "titleLine1": "Questions parents",
+      "titleAccent": "ask most often",
+      "items": [
+        {
+          "q": "Can I enroll my child online?",
+          "a": "Yes. Online enrollment is available through this site. After applying online, original documents must be brought to the institution's administration within 7 days."
+        },
+        {
+          "q": "How are applications scored when there are more children than spots?",
+          "a": "The scoring system, defined by the Rulebook, includes parents' employment status, number of children in the family, residence, the child's specific needs, and existing enrolled siblings. The full table is in the Documents section."
+        },
+        {
+          "q": "Is there a fee for the child's stay at the kindergarten?",
+          "a": "Yes, there is a monthly participation fee per the Canton Sarajevo Government's Decision. The amount depends on family income and the number of children at the same kindergarten; subsidies are available."
+        },
+        {
+          "q": "What if my child has an allergy or a special diet?",
+          "a": "Our kitchens prepare dietary meals. At enrollment you submit a pediatrician's certificate with precise instructions, and kindergarten staff individually monitor each case."
+        },
+        {
+          "q": "Can the child attend half-day?",
+          "a": "Yes. We offer half-day (4 hours) and full-day (up to 10.5 hours) attendance. You choose one of the schedules at the time of application."
+        }
+      ]
+    }
+  },
+  "menus": {
+    "header": {
+      "eyebrow": "What our little ones eat",
+      "titleLine1": "Home-cooked",
+      "titleAccent": "every day",
+      "intro": "Our six kitchens prepare about 8,500 meals a week, using only fresh ingredients. The menu is designed by a nutritionist in collaboration with pediatricians."
+    },
+    "weekTitle": "Week 21",
+    "weekHeading": "Weekly menu · 19—23 May",
+    "weekDownload": "Download PDF (week 21)",
+    "dayLabel": "Day {n}",
+    "labels": {
+      "breakfast": "Breakfast",
+      "snack": "Snack",
+      "lunch": "Lunch",
+      "dessert": "Dessert"
+    },
+    "week": [
+      { "day": "Monday", "breakfast": "Milk, whole-grain bread, homemade plum jam", "snack": "Seasonal fruit (apple, pear)", "lunch": "Bosnian stew, cabbage salad", "dessert": "Homemade apple cake" },
+      { "day": "Tuesday", "breakfast": "Cocoa, whole-grain bun with cheese", "snack": "Carrot and cucumber sticks with hummus", "lunch": "Chicken paprikash with steamed vegetables", "dessert": "Yogurt with dried fruit" },
+      { "day": "Wednesday", "breakfast": "Milk with oats and honey", "snack": "Banana", "lunch": "Battered fish, mashed potato, beetroot salad", "dessert": "Fruit salad" },
+      { "day": "Thursday", "breakfast": "Warm sandwich with scrambled eggs and veggies, tea", "snack": "Sugar-free wheat muffin", "lunch": "Green beans with beef, boiled potatoes", "dessert": "Dried plum compote" },
+      { "day": "Friday", "breakfast": "Cheese and spinach pita, yogurt", "snack": "Grapes or watermelon (seasonal)", "lunch": "Homemade sarma, whole-grain bread", "dessert": "A bite of homemade halva" }
+    ],
+    "diets": {
+      "eyebrow": "Special diets",
+      "title": "We never skip allergies.",
+      "intro": "For every child with a medical indication our kitchen keeps a separate cooking card and preparation protocol. Parents provide the medical certificate, we handle the rest.",
+      "available": "available",
+      "altPhoto": "A child at the kindergarten",
+      "items": [
+        { "tag": "Gluten-free", "body": "We prepare substitute meals; a medical certificate is required." },
+        { "tag": "Lactose-free", "body": "Plant-based milk and alternative desserts." },
+        { "tag": "Vegetarian", "body": "On parents' request, with guaranteed variety." },
+        { "tag": "Halal", "body": "All meat and bakery products are halal-certified." },
+        { "tag": "Nut-free", "body": "Strict kitchen protocol; allergens kept separate." }
+      ]
+    },
+    "nutrition": {
+      "eyebrow": "Nutrition",
+      "title": "Every meal is",
+      "titleAccent": "measured",
+      "items": [
+        { "n": "1,450 kcal", "l": "Average daily intake" },
+        { "n": "5×", "l": "Meals per day" },
+        { "n": "7+", "l": "Kinds of fruit and vegetables weekly" },
+        { "n": "< 6g", "l": "Salt per meal" }
+      ]
+    }
+  },
+  "news": {
+    "header": {
+      "eyebrow": "From the institution",
+      "titleLine1": "Announcements, open calls, and",
+      "titleAccent": "news",
+      "titleLine2": "from the kindergartens.",
+      "intro": "Every Management Board decision, public call, event announcement, and small story from the daily life of our 14 facilities — all in one place."
+    },
+    "categories": ["All", "Open call", "Decision", "Event", "Update"],
+    "featuredSuffix": "Featured",
+    "items": [
+      { "cat": "Open call", "date": "20.05.2026", "title": "Public call for the permanent hiring of 18 educators", "body": "The call was published in the daily „Oslobođenje\" and remains open for 14 days from publication." },
+      { "cat": "Event", "date": "18.05.2026", "title": "Closing performance of the preparatory program — National Theatre", "body": "The little artists from our kindergartens have prepared a 45-minute program. Free entry, limited seating." },
+      { "cat": "Decision", "date": "12.05.2026", "title": "Management Board decision on adopting the 2025 report", "body": "The full report on operations and finances is available in the Documents section." },
+      { "cat": "Update", "date": "08.05.2026", "title": "Speech therapy room launched at „Iskrica\" kindergarten", "body": "The new room enables early detection and therapy of speech difficulties for children aged 3–6." },
+      { "cat": "Open call", "date": "02.05.2026", "title": "Public procurement for yard equipment — call for tenders", "body": "Tender documentation is available on the portal of the BiH Public Procurement Agency." },
+      { "cat": "Update", "date": "28.04.2026", "title": "Cooperation with the Faculty of Philosophy — internships for pedagogy students", "body": "Over two semesters students will work in 6 selected kindergartens with mentoring from experienced educators." },
+      { "cat": "Event", "date": "15.04.2026", "title": "Open Day — 25 May, all our kindergartens", "body": "Parents and children can visit the kindergartens, meet the teams, and see the classrooms. No appointment needed." }
+    ]
+  },
+  "documents": {
+    "header": {
+      "eyebrow": "Transparency",
+      "titleLine1": "Every decision,",
+      "titleAccent": "in plain sight",
+      "intro": "As a public institution, we publish all decisions, reports, statutes, and rulebooks openly. Feel free to download and read."
+    },
+    "sectionLabel": "Section {n}",
+    "docCount": "{count} documents",
+    "publishedIn": "Published {year}.",
+    "download": "Download",
+    "sections": [
+      {
+        "id": "statut",
+        "label": "Statute and founding acts",
+        "docs": [
+          { "title": "Statute of JU „Djeca Sarajeva\"", "year": 2024, "size": "2.1 MB", "format": "PDF" },
+          { "title": "Code of ethics for employees", "year": 2023, "size": "480 KB", "format": "PDF" },
+          { "title": "Privacy Policy", "year": 2025, "size": "320 KB", "format": "PDF" }
+        ]
+      },
+      {
+        "id": "pravilnici",
+        "label": "Rulebooks",
+        "docs": [
+          { "title": "Rulebook on child enrollment", "year": 2025, "size": "1.4 MB", "format": "PDF" },
+          { "title": "Rulebook on work", "year": 2024, "size": "1.8 MB", "format": "PDF" },
+          { "title": "Rulebook on job systematization", "year": 2023, "size": "2.6 MB", "format": "PDF" },
+          { "title": "Rulebook on small-value procurement", "year": 2024, "size": "740 KB", "format": "PDF" }
+        ]
+      },
+      {
+        "id": "nabavke",
+        "label": "Public procurement",
+        "docs": [
+          { "title": "Procurement plan for 2026", "year": 2026, "size": "3.2 MB", "format": "PDF" },
+          { "title": "Report on 2025 procurement execution", "year": 2025, "size": "4.1 MB", "format": "PDF" },
+          { "title": "Open tenders — yard equipment", "year": 2026, "size": "1.1 MB", "format": "PDF" },
+          { "title": "Standard service contract", "year": 2024, "size": "210 KB", "format": "DOCX" }
+        ]
+      },
+      {
+        "id": "izvjestaji",
+        "label": "Operation reports",
+        "docs": [
+          { "title": "Annual operations report 2025", "year": 2025, "size": "6.4 MB", "format": "PDF" },
+          { "title": "Financial report 2025", "year": 2025, "size": "2.9 MB", "format": "PDF" },
+          { "title": "Staff professional development report", "year": 2024, "size": "1.5 MB", "format": "PDF" },
+          { "title": "Half-year financial summary 2026", "year": 2026, "size": "1.2 MB", "format": "PDF" }
+        ]
+      }
+    ]
+  },
+  "parentCouncil": {
+    "header": {
+      "eyebrow": "Parent Council",
+      "titleLine1": "The voice of families in",
+      "titleAccent": "our institution",
+      "intro": "The Council is made up of parents from all 14 kindergartens. It meets monthly, makes recommendations, and oversees our work from the perspective of those who care most."
+    },
+    "membersTitle": "Six representatives",
+    "mandate": "Mandate 2025—2027",
+    "presidentBadge": "★ Chair",
+    "presidentQuote": "„Our job is simple — to be a bridge between families and the institution. We listen, we ask questions, we look for answers. We're open to every parent's message.\"",
+    "members": [
+      { "name": "Tarik Mušić", "role": "Chair", "vrtic": "„Sunce\" Kindergarten" },
+      { "name": "Alma Halilović", "role": "Deputy", "vrtic": "„Iskrica\" Kindergarten" },
+      { "name": "Edin Begić", "role": "Secretary", "vrtic": "„Bambi\" Kindergarten" },
+      { "name": "Selma Mahić", "role": "Member", "vrtic": "„Pčelica\" Kindergarten" },
+      { "name": "Dejan Pavlović", "role": "Member", "vrtic": "„Maslačak\" Kindergarten" },
+      { "name": "Mirela Spahić", "role": "Member", "vrtic": "„Dukat\" Kindergarten" }
+    ],
+    "duties": {
+      "eyebrow": "Responsibilities",
+      "titleLine1": "Five roles, one",
+      "titleAccent": "group",
+      "items": [
+        "Gives opinions on the institution's annual work plan and oversees its implementation.",
+        "Nominates Management Board members from among the parents.",
+        "Reviews parents' complaints and mediates between the institution and families.",
+        "Participates in drafting internal acts that directly affect children and families.",
+        "Organizes at least one annual meeting with all parents."
+      ]
+    },
+    "minutes": {
+      "title": "Meeting minutes",
+      "archive": "View archive (35+ minutes)",
+      "items": [
+        { "date": "12.05.2026", "title": "Regular session no. 14 — adopting the 2026/27 program", "size": "420 KB" },
+        { "date": "14.04.2026", "title": "Regular session no. 13 — parent survey analysis", "size": "380 KB" },
+        { "date": "10.03.2026", "title": "Extraordinary session — yard safety", "size": "290 KB" },
+        { "date": "12.02.2026", "title": "Regular session no. 12 — Q4 2025 financial report", "size": "510 KB" },
+        { "date": "15.01.2026", "title": "Constitutive session of the new term", "size": "230 KB" }
+      ]
+    },
+    "ctaCard": {
+      "eyebrow": "Open to parents",
+      "title1": "Have a suggestion, complaint, or praise?",
+      "title2": "Write to us directly."
+    }
+  },
+  "contact": {
+    "header": {
+      "eyebrow": "Contact us",
+      "titleLine1": "We're here every",
+      "titleAccent": "working day",
+      "intro": "Pick the channel that suits you — phone, e-mail, or a visit to the office. We aim to respond on the same working day."
+    },
+    "cards": {
+      "address": { "label": "Address", "v": "La Benevolencije 4\n71000 Sarajevo" },
+      "phone": { "label": "Phone", "v": "+387 33 444 555\n+387 33 444 556 (secretariat)" },
+      "email": { "label": "E-mail", "v": "info@djecasarajeva.ba\nuprava@djecasarajeva.ba" },
+      "hours": { "label": "Hours", "v": "Mon — Fri: 07:30 — 15:30\nSat, Sun: closed" }
+    },
+    "form": {
+      "eyebrow": "Write to us",
+      "title": "Send a message.",
+      "fields": {
+        "name": "Full name",
+        "namePh": "Your name",
+        "email": "E-mail",
+        "emailPh": "name@email.com",
+        "topic": "Topic",
+        "message": "Message",
+        "messagePh": "Write to us..."
+      },
+      "topics": ["General inquiry", "Child enrollment", "Suggestion for the Parent Council", "Praise", "Complaint", "Media inquiry"],
+      "consent": "I consent to the Privacy Policy.",
+      "submit": "SEND MESSAGE"
+    },
+    "quickCard": {
+      "eyebrow": "Fast line",
+      "title": "For parents of already enrolled children",
+      "body": "All questions about the current stay, menu, or absences — send directly to the educator or to the administration of your kindergarten."
+    },
+    "mapTitle": "Administration map"
+  }
+}
