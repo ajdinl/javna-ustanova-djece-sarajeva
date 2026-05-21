@@ -102,7 +102,7 @@
       "statKindergartens": "Vrtića u gradu",
       "statChildren": "Naših mališana",
       "statYears": "Godina rada",
-      "stickerText": "UPIS 2026/27 · OTVOREN · ZAGRLJAJ ČEKA ·",
+      "stickerText": "UPIS 2026/27 · ZAGRLJAJ ČEKA ·",
       "stickerBadge": "NEW",
       "photo1Caption1": "Vrtić · Centar",
       "photo1Caption2": "05/2026",
@@ -256,11 +256,27 @@
       "title": "Od jedne adrese do",
       "titleAccent": "četrnaest",
       "items": [
-        { "y": "1979", "t": "Osnivanje", "b": "Skupština grada Sarajeva osniva jedinstvenu predškolsku ustanovu sa 8 vrtića." },
-        { "y": "1992–95", "t": "Rad pod opsadom", "b": "Tokom opsade rad ne prestaje — improvizovani prostori, hrana iz humanitarne pomoći." },
-        { "y": "2003", "t": "Reforma kurikuluma", "b": "Uvođenje integriranog programa razvoja djeteta po modelu „Reggio Emilia\"." },
+        {
+          "y": "1979",
+          "t": "Osnivanje",
+          "b": "Skupština grada Sarajeva osniva jedinstvenu predškolsku ustanovu sa 8 vrtića."
+        },
+        {
+          "y": "1992–95",
+          "t": "Rad pod opsadom",
+          "b": "Tokom opsade rad ne prestaje — improvizovani prostori, hrana iz humanitarne pomoći."
+        },
+        {
+          "y": "2003",
+          "t": "Reforma kurikuluma",
+          "b": "Uvođenje integriranog programa razvoja djeteta po modelu „Reggio Emilia\"."
+        },
         { "y": "2014", "t": "Inkluzivni program", "b": "Pokretanje mreže defektologa i logopeda u svim objektima." },
-        { "y": "2026", "t": "14 vrtića · 3.200 djece", "b": "Danas brinemo o više od 3.200 djece u 14 objekata širom Sarajeva." }
+        {
+          "y": "2026",
+          "t": "14 vrtića · 3.200 djece",
+          "b": "Danas brinemo o više od 3.200 djece u 14 objekata širom Sarajeva."
+        }
       ]
     },
     "org": {
@@ -297,12 +313,54 @@
       "schedule": "Zakaži posjetu"
     },
     "items": [
-      { "name": "Sunce", "area": "Centar", "address": "La Benevolencije 4", "capacity": 280, "phone": "+387 33 444 100", "programs": ["Inkluzivni program", "Govorna terapija"] },
-      { "name": "Bambi", "area": "Novo Sarajevo", "address": "Kolodvorska 12", "capacity": 210, "phone": "+387 33 444 110", "programs": ["Engleski jezik", "Mala likovna škola"] },
-      { "name": "Pčelica", "area": "Stari Grad", "address": "Bistrik 23", "capacity": 180, "phone": "+387 33 444 120", "programs": ["Mali sportaši", "Tradicija i baština"] },
-      { "name": "Maslačak", "area": "Ilidža", "address": "Mala Aleja 41", "capacity": 240, "phone": "+387 33 444 130", "programs": ["Muzička radionica", "Eko-vrtić"] },
-      { "name": "Dukat", "area": "Vogošća", "address": "Igmanska 7", "capacity": 160, "phone": "+387 33 444 140", "programs": ["Engleski jezik", "Inkluzivni program"] },
-      { "name": "Iskrica", "area": "Novi Grad", "address": "Trg djece Dobrinje 12", "capacity": 320, "phone": "+387 33 444 150", "programs": ["Najveći kapacitet", "STEM kutak"] }
+      {
+        "name": "Sunce",
+        "area": "Centar",
+        "address": "La Benevolencije 4",
+        "capacity": 280,
+        "phone": "+387 33 444 100",
+        "programs": ["Inkluzivni program", "Govorna terapija"]
+      },
+      {
+        "name": "Bambi",
+        "area": "Novo Sarajevo",
+        "address": "Kolodvorska 12",
+        "capacity": 210,
+        "phone": "+387 33 444 110",
+        "programs": ["Engleski jezik", "Mala likovna škola"]
+      },
+      {
+        "name": "Pčelica",
+        "area": "Stari Grad",
+        "address": "Bistrik 23",
+        "capacity": 180,
+        "phone": "+387 33 444 120",
+        "programs": ["Mali sportaši", "Tradicija i baština"]
+      },
+      {
+        "name": "Maslačak",
+        "area": "Ilidža",
+        "address": "Mala Aleja 41",
+        "capacity": 240,
+        "phone": "+387 33 444 130",
+        "programs": ["Muzička radionica", "Eko-vrtić"]
+      },
+      {
+        "name": "Dukat",
+        "area": "Vogošća",
+        "address": "Igmanska 7",
+        "capacity": 160,
+        "phone": "+387 33 444 140",
+        "programs": ["Engleski jezik", "Inkluzivni program"]
+      },
+      {
+        "name": "Iskrica",
+        "area": "Novi Grad",
+        "address": "Trg djece Dobrinje 12",
+        "capacity": 320,
+        "phone": "+387 33 444 150",
+        "programs": ["Najveći kapacitet", "STEM kutak"]
+      }
     ],
     "cardPrefix": "Vrtić",
     "moreNote": "I još 8 vrtića u izradi profila — uskoro dostupno.",
@@ -429,11 +487,41 @@
       "dessert": "Desert"
     },
     "week": [
-      { "day": "Ponedjeljak", "breakfast": "Mlijeko, hljeb od integralnog brašna, domaća marmelada od šljiva", "snack": "Sezonska voćka (jabuka, kruška)", "lunch": "Bosanski lonac, salata od kupusa", "dessert": "Domaći kolač od jabuka" },
-      { "day": "Utorak", "breakfast": "Kakao, integralna kifla sa sirom", "snack": "Šargarepa i krastavci u štapićima sa humusom", "lunch": "Pileći paprikaš sa kuhanim povrćem", "dessert": "Jogurt sa sušenim voćem" },
-      { "day": "Srijeda", "breakfast": "Mlijeko sa zobenim pahuljicama i medom", "snack": "Banana", "lunch": "Riba u tijestu, krompir-pire, salata od cikle", "dessert": "Voćna salata" },
-      { "day": "Četvrtak", "breakfast": "Topli sendvič sa kajganom i povrćem, čaj", "snack": "Pšenični mafin bez šećera", "lunch": "Mahune sa govedinom, kuhani krompir", "dessert": "Kompot od sušene šljive" },
-      { "day": "Petak", "breakfast": "Pita sa sirom i špinatom, jogurt", "snack": "Grožđe ili lubenica (sezonski)", "lunch": "Domaća sarma, integralni hljeb", "dessert": "Kuglica domaće halve" }
+      {
+        "day": "Ponedjeljak",
+        "breakfast": "Mlijeko, hljeb od integralnog brašna, domaća marmelada od šljiva",
+        "snack": "Sezonska voćka (jabuka, kruška)",
+        "lunch": "Bosanski lonac, salata od kupusa",
+        "dessert": "Domaći kolač od jabuka"
+      },
+      {
+        "day": "Utorak",
+        "breakfast": "Kakao, integralna kifla sa sirom",
+        "snack": "Šargarepa i krastavci u štapićima sa humusom",
+        "lunch": "Pileći paprikaš sa kuhanim povrćem",
+        "dessert": "Jogurt sa sušenim voćem"
+      },
+      {
+        "day": "Srijeda",
+        "breakfast": "Mlijeko sa zobenim pahuljicama i medom",
+        "snack": "Banana",
+        "lunch": "Riba u tijestu, krompir-pire, salata od cikle",
+        "dessert": "Voćna salata"
+      },
+      {
+        "day": "Četvrtak",
+        "breakfast": "Topli sendvič sa kajganom i povrćem, čaj",
+        "snack": "Pšenični mafin bez šećera",
+        "lunch": "Mahune sa govedinom, kuhani krompir",
+        "dessert": "Kompot od sušene šljive"
+      },
+      {
+        "day": "Petak",
+        "breakfast": "Pita sa sirom i špinatom, jogurt",
+        "snack": "Grožđe ili lubenica (sezonski)",
+        "lunch": "Domaća sarma, integralni hljeb",
+        "dessert": "Kuglica domaće halve"
+      }
     ],
     "diets": {
       "eyebrow": "Posebne dijete",
@@ -472,13 +560,48 @@
     "categories": ["Sve", "Konkurs", "Odluka", "Događaj", "Novost"],
     "featuredSuffix": "Istaknuto",
     "items": [
-      { "cat": "Konkurs", "date": "20.05.2026", "title": "Javni konkurs za prijem 18 odgajatelja u stalni radni odnos", "body": "Konkurs je objavljen u dnevnim novinama „Oslobođenje\" i ostaje otvoren 14 dana od dana objavljivanja." },
-      { "cat": "Događaj", "date": "18.05.2026", "title": "Završna priredba pripremnog programa — Narodno pozorište", "body": "Mali umjetnici naših vrtića pripremili su program u trajanju od 45 minuta. Ulaz besplatan, mjesta ograničena." },
-      { "cat": "Odluka", "date": "12.05.2026", "title": "Odluka Upravnog odbora o usvajanju izvještaja za 2025. godinu", "body": "Kompletan izvještaj o radu i finansijama dostupan je u sekciji Dokumenti." },
-      { "cat": "Novost", "date": "08.05.2026", "title": "Pokrenuta logopedska kabinet u vrtiću „Iskrica\"", "body": "Novi kabinet omogućava ranu detekciju i terapiju govornih poteškoća za djecu uzrasta 3—6 godina." },
-      { "cat": "Konkurs", "date": "02.05.2026", "title": "Javna nabavka opreme za dvorišta — poziv za dostavu ponuda", "body": "Tenderska dokumentacija dostupna je na portalu Agencije za javne nabavke BiH." },
-      { "cat": "Novost", "date": "28.04.2026", "title": "Saradnja sa Filozofskim fakultetom — praksa za studente pedagogije", "body": "Studenti će kroz dva semestra raditi u 6 odabranih vrtića sa mentorstvom iskusnih odgajatelja." },
-      { "cat": "Događaj", "date": "15.04.2026", "title": "Dan otvorenih vrata — 25. maj, svi naši vrtići", "body": "Roditelji i djeca mogu posjetiti vrtiće, upoznati timove i pogledati učionice. Bez najave." }
+      {
+        "cat": "Konkurs",
+        "date": "20.05.2026",
+        "title": "Javni konkurs za prijem 18 odgajatelja u stalni radni odnos",
+        "body": "Konkurs je objavljen u dnevnim novinama „Oslobođenje\" i ostaje otvoren 14 dana od dana objavljivanja."
+      },
+      {
+        "cat": "Događaj",
+        "date": "18.05.2026",
+        "title": "Završna priredba pripremnog programa — Narodno pozorište",
+        "body": "Mali umjetnici naših vrtića pripremili su program u trajanju od 45 minuta. Ulaz besplatan, mjesta ograničena."
+      },
+      {
+        "cat": "Odluka",
+        "date": "12.05.2026",
+        "title": "Odluka Upravnog odbora o usvajanju izvještaja za 2025. godinu",
+        "body": "Kompletan izvještaj o radu i finansijama dostupan je u sekciji Dokumenti."
+      },
+      {
+        "cat": "Novost",
+        "date": "08.05.2026",
+        "title": "Pokrenuta logopedska kabinet u vrtiću „Iskrica\"",
+        "body": "Novi kabinet omogućava ranu detekciju i terapiju govornih poteškoća za djecu uzrasta 3—6 godina."
+      },
+      {
+        "cat": "Konkurs",
+        "date": "02.05.2026",
+        "title": "Javna nabavka opreme za dvorišta — poziv za dostavu ponuda",
+        "body": "Tenderska dokumentacija dostupna je na portalu Agencije za javne nabavke BiH."
+      },
+      {
+        "cat": "Novost",
+        "date": "28.04.2026",
+        "title": "Saradnja sa Filozofskim fakultetom — praksa za studente pedagogije",
+        "body": "Studenti će kroz dva semestra raditi u 6 odabranih vrtića sa mentorstvom iskusnih odgajatelja."
+      },
+      {
+        "cat": "Događaj",
+        "date": "15.04.2026",
+        "title": "Dan otvorenih vrata — 25. maj, svi naši vrtići",
+        "body": "Roditelji i djeca mogu posjetiti vrtiće, upoznati timove i pogledati učionice. Bez najave."
+      }
     ]
   },
   "documents": {
@@ -572,7 +695,11 @@
         { "date": "12.05.2026", "title": "Redovna sjednica br. 14 — usvajanje programa za 2026/27", "size": "420 KB" },
         { "date": "14.04.2026", "title": "Redovna sjednica br. 13 — analiza upitnika za roditelje", "size": "380 KB" },
         { "date": "10.03.2026", "title": "Vanredna sjednica — sigurnost u dvorištima", "size": "290 KB" },
-        { "date": "12.02.2026", "title": "Redovna sjednica br. 12 — finansijski izvještaj IV kvartal 2025.", "size": "510 KB" },
+        {
+          "date": "12.02.2026",
+          "title": "Redovna sjednica br. 12 — finansijski izvještaj IV kvartal 2025.",
+          "size": "510 KB"
+        },
         { "date": "15.01.2026", "title": "Konstituirajuća sjednica novog saziva", "size": "230 KB" }
       ]
     },

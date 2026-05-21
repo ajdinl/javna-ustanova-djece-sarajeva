@@ -102,7 +102,7 @@
       "statKindergartens": "Kindergartens in town",
       "statChildren": "Of our little ones",
       "statYears": "Years of work",
-      "stickerText": "ENROLLMENT 2026/27 · OPEN · A HUG AWAITS ·",
+      "stickerText": "ENROLLMENT 2026/27 · A HUG AWAITS ·",
       "stickerBadge": "NEW",
       "photo1Caption1": "Kindergarten · Centar",
       "photo1Caption2": "05/2026",
@@ -167,11 +167,19 @@
       "stickerActivity": "Fine motor development",
       "schedule": [
         { "time": "06:30", "label": "Arrival", "body": "A warm welcome, a cup of tea for parents who'd like one." },
-        { "time": "08:00", "label": "Breakfast", "body": "A seasonal menu from our own kitchen, adapted to allergies." },
+        {
+          "time": "08:00",
+          "label": "Breakfast",
+          "body": "A seasonal menu from our own kitchen, adapted to allergies."
+        },
         { "time": "09:00", "label": "Workshop", "body": "Themed activities — art, music, language." },
         { "time": "10:30", "label": "Yard time", "body": "Fresh air every day, playground, garden tools." },
         { "time": "12:00", "label": "Lunch and rest", "body": "A quiet meal, a story before the afternoon nap." },
-        { "time": "15:00", "label": "Free play", "body": "The child chooses the activity. Freedom is part of growing." },
+        {
+          "time": "15:00",
+          "label": "Free play",
+          "body": "The child chooses the activity. Freedom is part of growing."
+        },
         { "time": "17:00", "label": "Departure", "body": "Handover to parents with a short daily summary." }
       ]
     },
@@ -256,11 +264,31 @@
       "title": "From one address to",
       "titleAccent": "fourteen",
       "items": [
-        { "y": "1979", "t": "Founding", "b": "The City Assembly of Sarajevo founds a unified preschool institution with 8 kindergartens." },
-        { "y": "1992–95", "t": "Working under siege", "b": "During the siege the work doesn't stop — improvised spaces, food from humanitarian aid." },
-        { "y": "2003", "t": "Curriculum reform", "b": "An integrated child-development program is introduced, modeled on „Reggio Emilia\"." },
-        { "y": "2014", "t": "Inclusive program", "b": "A network of special educators and speech therapists launches across all facilities." },
-        { "y": "2026", "t": "14 kindergartens · 3,200 children", "b": "Today we care for more than 3,200 children in 14 facilities across Sarajevo." }
+        {
+          "y": "1979",
+          "t": "Founding",
+          "b": "The City Assembly of Sarajevo founds a unified preschool institution with 8 kindergartens."
+        },
+        {
+          "y": "1992–95",
+          "t": "Working under siege",
+          "b": "During the siege the work doesn't stop — improvised spaces, food from humanitarian aid."
+        },
+        {
+          "y": "2003",
+          "t": "Curriculum reform",
+          "b": "An integrated child-development program is introduced, modeled on „Reggio Emilia\"."
+        },
+        {
+          "y": "2014",
+          "t": "Inclusive program",
+          "b": "A network of special educators and speech therapists launches across all facilities."
+        },
+        {
+          "y": "2026",
+          "t": "14 kindergartens · 3,200 children",
+          "b": "Today we care for more than 3,200 children in 14 facilities across Sarajevo."
+        }
       ]
     },
     "org": {
@@ -297,12 +325,54 @@
       "schedule": "Schedule a visit"
     },
     "items": [
-      { "name": "Sunce", "area": "Centar", "address": "La Benevolencije 4", "capacity": 280, "phone": "+387 33 444 100", "programs": ["Inclusive program", "Speech therapy"] },
-      { "name": "Bambi", "area": "Novo Sarajevo", "address": "Kolodvorska 12", "capacity": 210, "phone": "+387 33 444 110", "programs": ["English language", "Little art school"] },
-      { "name": "Pčelica", "area": "Stari Grad", "address": "Bistrik 23", "capacity": 180, "phone": "+387 33 444 120", "programs": ["Little athletes", "Tradition & heritage"] },
-      { "name": "Maslačak", "area": "Ilidža", "address": "Mala Aleja 41", "capacity": 240, "phone": "+387 33 444 130", "programs": ["Music workshop", "Eco-kindergarten"] },
-      { "name": "Dukat", "area": "Vogošća", "address": "Igmanska 7", "capacity": 160, "phone": "+387 33 444 140", "programs": ["English language", "Inclusive program"] },
-      { "name": "Iskrica", "area": "Novi Grad", "address": "Trg djece Dobrinje 12", "capacity": 320, "phone": "+387 33 444 150", "programs": ["Largest capacity", "STEM corner"] }
+      {
+        "name": "Sunce",
+        "area": "Centar",
+        "address": "La Benevolencije 4",
+        "capacity": 280,
+        "phone": "+387 33 444 100",
+        "programs": ["Inclusive program", "Speech therapy"]
+      },
+      {
+        "name": "Bambi",
+        "area": "Novo Sarajevo",
+        "address": "Kolodvorska 12",
+        "capacity": 210,
+        "phone": "+387 33 444 110",
+        "programs": ["English language", "Little art school"]
+      },
+      {
+        "name": "Pčelica",
+        "area": "Stari Grad",
+        "address": "Bistrik 23",
+        "capacity": 180,
+        "phone": "+387 33 444 120",
+        "programs": ["Little athletes", "Tradition & heritage"]
+      },
+      {
+        "name": "Maslačak",
+        "area": "Ilidža",
+        "address": "Mala Aleja 41",
+        "capacity": 240,
+        "phone": "+387 33 444 130",
+        "programs": ["Music workshop", "Eco-kindergarten"]
+      },
+      {
+        "name": "Dukat",
+        "area": "Vogošća",
+        "address": "Igmanska 7",
+        "capacity": 160,
+        "phone": "+387 33 444 140",
+        "programs": ["English language", "Inclusive program"]
+      },
+      {
+        "name": "Iskrica",
+        "area": "Novi Grad",
+        "address": "Trg djece Dobrinje 12",
+        "capacity": 320,
+        "phone": "+387 33 444 150",
+        "programs": ["Largest capacity", "STEM corner"]
+      }
     ],
     "cardPrefix": "Kindergarten",
     "moreNote": "And 8 more kindergartens with profiles in progress — available soon.",
@@ -429,11 +499,41 @@
       "dessert": "Dessert"
     },
     "week": [
-      { "day": "Monday", "breakfast": "Milk, whole-grain bread, homemade plum jam", "snack": "Seasonal fruit (apple, pear)", "lunch": "Bosnian stew, cabbage salad", "dessert": "Homemade apple cake" },
-      { "day": "Tuesday", "breakfast": "Cocoa, whole-grain bun with cheese", "snack": "Carrot and cucumber sticks with hummus", "lunch": "Chicken paprikash with steamed vegetables", "dessert": "Yogurt with dried fruit" },
-      { "day": "Wednesday", "breakfast": "Milk with oats and honey", "snack": "Banana", "lunch": "Battered fish, mashed potato, beetroot salad", "dessert": "Fruit salad" },
-      { "day": "Thursday", "breakfast": "Warm sandwich with scrambled eggs and veggies, tea", "snack": "Sugar-free wheat muffin", "lunch": "Green beans with beef, boiled potatoes", "dessert": "Dried plum compote" },
-      { "day": "Friday", "breakfast": "Cheese and spinach pita, yogurt", "snack": "Grapes or watermelon (seasonal)", "lunch": "Homemade sarma, whole-grain bread", "dessert": "A bite of homemade halva" }
+      {
+        "day": "Monday",
+        "breakfast": "Milk, whole-grain bread, homemade plum jam",
+        "snack": "Seasonal fruit (apple, pear)",
+        "lunch": "Bosnian stew, cabbage salad",
+        "dessert": "Homemade apple cake"
+      },
+      {
+        "day": "Tuesday",
+        "breakfast": "Cocoa, whole-grain bun with cheese",
+        "snack": "Carrot and cucumber sticks with hummus",
+        "lunch": "Chicken paprikash with steamed vegetables",
+        "dessert": "Yogurt with dried fruit"
+      },
+      {
+        "day": "Wednesday",
+        "breakfast": "Milk with oats and honey",
+        "snack": "Banana",
+        "lunch": "Battered fish, mashed potato, beetroot salad",
+        "dessert": "Fruit salad"
+      },
+      {
+        "day": "Thursday",
+        "breakfast": "Warm sandwich with scrambled eggs and veggies, tea",
+        "snack": "Sugar-free wheat muffin",
+        "lunch": "Green beans with beef, boiled potatoes",
+        "dessert": "Dried plum compote"
+      },
+      {
+        "day": "Friday",
+        "breakfast": "Cheese and spinach pita, yogurt",
+        "snack": "Grapes or watermelon (seasonal)",
+        "lunch": "Homemade sarma, whole-grain bread",
+        "dessert": "A bite of homemade halva"
+      }
     ],
     "diets": {
       "eyebrow": "Special diets",
@@ -472,13 +572,48 @@
     "categories": ["All", "Open call", "Decision", "Event", "Update"],
     "featuredSuffix": "Featured",
     "items": [
-      { "cat": "Open call", "date": "20.05.2026", "title": "Public call for the permanent hiring of 18 educators", "body": "The call was published in the daily „Oslobođenje\" and remains open for 14 days from publication." },
-      { "cat": "Event", "date": "18.05.2026", "title": "Closing performance of the preparatory program — National Theatre", "body": "The little artists from our kindergartens have prepared a 45-minute program. Free entry, limited seating." },
-      { "cat": "Decision", "date": "12.05.2026", "title": "Management Board decision on adopting the 2025 report", "body": "The full report on operations and finances is available in the Documents section." },
-      { "cat": "Update", "date": "08.05.2026", "title": "Speech therapy room launched at „Iskrica\" kindergarten", "body": "The new room enables early detection and therapy of speech difficulties for children aged 3–6." },
-      { "cat": "Open call", "date": "02.05.2026", "title": "Public procurement for yard equipment — call for tenders", "body": "Tender documentation is available on the portal of the BiH Public Procurement Agency." },
-      { "cat": "Update", "date": "28.04.2026", "title": "Cooperation with the Faculty of Philosophy — internships for pedagogy students", "body": "Over two semesters students will work in 6 selected kindergartens with mentoring from experienced educators." },
-      { "cat": "Event", "date": "15.04.2026", "title": "Open Day — 25 May, all our kindergartens", "body": "Parents and children can visit the kindergartens, meet the teams, and see the classrooms. No appointment needed." }
+      {
+        "cat": "Open call",
+        "date": "20.05.2026",
+        "title": "Public call for the permanent hiring of 18 educators",
+        "body": "The call was published in the daily „Oslobođenje\" and remains open for 14 days from publication."
+      },
+      {
+        "cat": "Event",
+        "date": "18.05.2026",
+        "title": "Closing performance of the preparatory program — National Theatre",
+        "body": "The little artists from our kindergartens have prepared a 45-minute program. Free entry, limited seating."
+      },
+      {
+        "cat": "Decision",
+        "date": "12.05.2026",
+        "title": "Management Board decision on adopting the 2025 report",
+        "body": "The full report on operations and finances is available in the Documents section."
+      },
+      {
+        "cat": "Update",
+        "date": "08.05.2026",
+        "title": "Speech therapy room launched at „Iskrica\" kindergarten",
+        "body": "The new room enables early detection and therapy of speech difficulties for children aged 3–6."
+      },
+      {
+        "cat": "Open call",
+        "date": "02.05.2026",
+        "title": "Public procurement for yard equipment — call for tenders",
+        "body": "Tender documentation is available on the portal of the BiH Public Procurement Agency."
+      },
+      {
+        "cat": "Update",
+        "date": "28.04.2026",
+        "title": "Cooperation with the Faculty of Philosophy — internships for pedagogy students",
+        "body": "Over two semesters students will work in 6 selected kindergartens with mentoring from experienced educators."
+      },
+      {
+        "cat": "Event",
+        "date": "15.04.2026",
+        "title": "Open Day — 25 May, all our kindergartens",
+        "body": "Parents and children can visit the kindergartens, meet the teams, and see the classrooms. No appointment needed."
+      }
     ]
   },
   "documents": {
@@ -607,7 +742,14 @@
         "message": "Message",
         "messagePh": "Write to us..."
       },
-      "topics": ["General inquiry", "Child enrollment", "Suggestion for the Parent Council", "Praise", "Complaint", "Media inquiry"],
+      "topics": [
+        "General inquiry",
+        "Child enrollment",
+        "Suggestion for the Parent Council",
+        "Praise",
+        "Complaint",
+        "Media inquiry"
+      ],
       "consent": "I consent to the Privacy Policy.",
       "submit": "SEND MESSAGE"
     },
